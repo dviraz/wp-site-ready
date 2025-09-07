@@ -1,0 +1,10 @@
+{
+  "rewrites": [
+    { "source": "/shop", "destination": "http://localhost:8080/wordpress-api" },
+    { "source": "/shop/(.*)", "destination": "http://localhost:8080/wordpress-api/$1" }
+  ],
+  "redirects": [
+    { "source": "/services.html", "destination": "/shop", "permanent": true },
+    { "source": "/service-detail.html", "destination": "/shop", "permanent": true }
+  ]
+}

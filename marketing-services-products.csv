@@ -1,0 +1,103 @@
+Type,SKU,Name,Published,Featured,Visibility,Short description,Description,Tax status,Tax class,In stock?,Stock,Regular price,Categories,Tags,Weight,Length,Width,Height,Allow customer reviews?,Purchase note,Sale price,Attribute 1 name,Attribute 1 value(s),Attribute 1 visible,Attribute 1 global,Attribute 2 name,Attribute 2 value(s),Attribute 2 visible,Attribute 2 global,Attribute 3 name,Attribute 3 value(s),Attribute 3 visible,Attribute 3 global,Download limit,Download expiry days
+simple,SMM-001,Social Media Management,1,1,visible,"Manage your social media presence with expert content creation and community engagement.","<h3>Social Media Management Service</h3>
+<p>Transform your social media presence with our comprehensive management service. We handle everything from content creation to community engagement, helping you build a strong online presence that drives real business results.</p>
+
+<h4>What's Included:</h4>
+<ul>
+<li><strong>Daily posts on 2-3 platforms</strong> - Consistent, engaging content across your chosen social media channels</li>
+<li><strong>Community engagement</strong> - Active response to comments, messages, and interactions with your audience</li>
+<li><strong>Monthly performance report</strong> - Detailed analytics and insights to track your growth and ROI</li>
+<li><strong>Content calendar planning</strong> - Strategic post scheduling for optimal engagement</li>
+<li><strong>Brand-consistent visuals</strong> - Professional graphics and imagery that align with your brand</li>
+</ul>
+
+<h4>Perfect For:</h4>
+<ul>
+<li>Small to medium businesses looking to establish social media presence</li>
+<li>Companies wanting to increase brand awareness and engagement</li>
+<li>Businesses seeking to generate leads through social media</li>
+</ul>
+
+<p><strong>Delivery:</strong> Service begins within 2-3 business days of order confirmation. Monthly reports delivered on the 1st of each month.</p>",taxable,,1,,999,"Marketing Services > Social Media","social media, management, content creation, community engagement",,,,,,1,,,,Service Type,"Social Media Management",1,0,Delivery Time,"2-3 business days",1,0,Platforms,"Facebook, Instagram, Twitter",1,0,,
+simple,SEO-001,SEO Optimization,1,1,visible,"Improve your website's visibility in search engine results with comprehensive SEO strategies.","<h3>SEO Optimization Service</h3>
+<p>Boost your website's search engine rankings with our comprehensive SEO optimization service. Our data-driven approach ensures your business gets found by potential customers when they search for your products or services.</p>
+
+<h4>What's Included:</h4>
+<ul>
+<li><strong>Keyword research & strategy</strong> - Identify high-value keywords your customers are searching for</li>
+<li><strong>On-page optimization</strong> - Optimize your website content, meta tags, and structure for search engines</li>
+<li><strong>Technical SEO audit</strong> - Comprehensive analysis and fixes for technical SEO issues</li>
+<li><strong>Competitor analysis</strong> - Understand what your competitors are doing and how to outrank them</li>
+<li><strong>Monthly progress reports</strong> - Track your rankings, traffic, and conversions</li>
+</ul>
+
+<h4>Perfect For:</h4>
+<ul>
+<li>Businesses wanting to increase organic website traffic</li>
+<li>Companies looking to improve their Google search rankings</li>
+<li>Organizations seeking long-term, sustainable marketing growth</li>
+</ul>
+
+<p><strong>Delivery:</strong> Initial audit and strategy delivered within 5-7 business days. Optimization work begins immediately after approval.</p>",taxable,,1,,1299,"Marketing Services > SEO","seo, optimization, search engine, keyword research, rankings",,,,,,1,,,,Service Type,"SEO Optimization",1,0,Delivery Time,"5-7 business days",1,0,Focus Area,"Technical + Content + Strategy",1,0,,
+simple,CONTENT-001,Content Creation,1,1,visible,"Engaging blog posts, articles, and website copy to attract and convert customers.","<h3>Content Creation Service</h3>
+<p>Fuel your marketing efforts with high-quality, engaging content that attracts your ideal customers and drives conversions. Our expert writers create content that not only informs but also persuades and converts.</p>
+
+<h4>What's Included:</h4>
+<ul>
+<li><strong>4 blog posts (500-800 words each)</strong> - Well-researched, engaging articles tailored to your audience</li>
+<li><strong>Topic research & strategy</strong> - Data-driven content planning that aligns with your business goals</li>
+<li><strong>SEO optimization</strong> - Every piece is optimized for search engines to increase organic visibility</li>
+<li><strong>Custom graphics</strong> - Eye-catching featured images and social media graphics for each post</li>
+<li><strong>Content calendar</strong> - Strategic publishing schedule for maximum impact</li>
+</ul>
+
+<h4>Perfect For:</h4>
+<ul>
+<li>Businesses wanting to establish thought leadership in their industry</li>
+<li>Companies looking to improve their website's SEO through content</li>
+<li>Organizations seeking to nurture leads through valuable content</li>
+</ul>
+
+<p><strong>Delivery:</strong> First draft delivered within 7-10 business days. All content delivered within 2 weeks of order confirmation.</p>",taxable,,1,,699,"Marketing Services > Content","content creation, blog posts, copywriting, seo content",,,,,,1,,,,Service Type,"Content Creation",1,0,Delivery Time,"7-10 business days",1,0,Content Type,"Blog Posts + Graphics",1,0,,
+simple,EMAIL-001,Email Marketing Campaign,1,1,visible,"Targeted email campaigns with professional design, compelling copy, and automation.","<h3>Email Marketing Campaign Service</h3>
+<p>Reach your customers directly with professionally designed email campaigns that drive engagement and sales. Our comprehensive email marketing service handles everything from design to deployment and tracking.</p>
+
+<h4>What's Included:</h4>
+<ul>
+<li><strong>Email template design</strong> - Custom, mobile-responsive templates that reflect your brand</li>
+<li><strong>Campaign setup & deployment</strong> - Complete campaign configuration and sending</li>
+<li><strong>Performance tracking</strong> - Detailed analytics on opens, clicks, and conversions</li>
+<li><strong>List segmentation</strong> - Target specific customer groups with personalized messaging</li>
+<li><strong>A/B testing</strong> - Optimize subject lines and content for better performance</li>
+</ul>
+
+<h4>Perfect For:</h4>
+<ul>
+<li>Businesses with existing customer databases looking to increase repeat sales</li>
+<li>Companies wanting to nurture leads through automated sequences</li>
+<li>Organizations seeking to improve customer retention and lifetime value</li>
+</ul>
+
+<p><strong>Delivery:</strong> Campaign setup completed within 3-5 business days. First campaign sent within 1 week of approval.</p>",taxable,,1,,799,"Marketing Services > Email Marketing","email marketing, campaigns, newsletters, automation",,,,,,1,,,,Service Type,"Email Marketing",1,0,Delivery Time,"3-5 business days",1,0,Campaign Type,"Promotional + Nurture",1,0,,
+simple,PPC-001,PPC Management,1,1,visible,"Professional Google Ads and social media advertising management to maximize ROI.","<h3>PPC Management Service</h3>
+<p>Drive immediate traffic and conversions with professionally managed pay-per-click advertising campaigns. Our PPC experts optimize your ad spend to deliver maximum ROI across Google Ads and social media platforms.</p>
+
+<h4>What's Included:</h4>
+<ul>
+<li><strong>Campaign setup & optimization</strong> - Complete account setup with conversion tracking and optimization</li>
+<li><strong>Keyword research & bidding</strong> - Strategic keyword selection and bid management for optimal ROI</li>
+<li><strong>Monthly performance reports</strong> - Detailed analytics showing spend, conversions, and ROI</li>
+<li><strong>Ad copy creation</strong> - Compelling ad text designed to maximize click-through rates</li>
+<li><strong>Landing page recommendations</strong> - Suggestions to improve conversion rates</li>
+</ul>
+
+<h4>Perfect For:</h4>
+<ul>
+<li>Businesses wanting immediate visibility in search results</li>
+<li>Companies with clear conversion goals and tracking</li>
+<li>Organizations looking to scale their online advertising profitably</li>
+</ul>
+
+<p><strong>Delivery:</strong> Campaign setup completed within 3-5 business days. Full optimization begins immediately after launch.</p>
+
+<p><strong>Note:</strong> This service fee covers management only. Your advertising budget is separate and will be discussed during onboarding.</p>",taxable,,1,,1199,"Marketing Services > PPC","ppc, google ads, paid advertising, campaign management",,,,,,1,,,,Service Type,"PPC Management",1,0,Delivery Time,"3-5 business days",1,0,Platforms,"Google Ads + Social Media",1,0,,

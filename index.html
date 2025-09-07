@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>MarketBoost - Proven Marketing Services for SMBs</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="css/styles.css" rel="stylesheet"/>
+    <style type="text/tailwindcss">
+        :root {
+            --primary-color: #ea2a33;
+            --secondary-color: #fef2f2;
+            --background-color: #ffffff;
+            --text-primary: #1a202c;
+            --text-secondary: #4a5568;
+            --accent-color: #fbd38d;
+        }
+        body {
+            font-family: 'Work Sans', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-primary);
+        }
+    </style>
+</head>
+<body class="bg-[var(--background-color)] text-[var(--text-primary)]">
+    <div class="relative flex size-full min-h-screen flex-col group/design-root overflow-x-hidden">
+        <!-- Header -->
+        <header class="flex items-center justify-between whitespace-nowrap border-b border-gray-200 px-4 md:px-10 py-4 shadow-sm">
+            <div class="flex items-center gap-3 text-[var(--text-primary)]">
+                <div class="w-8 h-8 text-[var(--primary-color)]">
+                    <svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                        <path clip-rule="evenodd" d="M24 18.4228L42 11.475V34.3663C42 34.7796 41.7457 35.1504 41.3601 35.2992L24 42V18.4228Z" fill="currentColor" fill-rule="evenodd"></path>
+                        <path clip-rule="evenodd" d="M24 8.18819L33.4123 11.574L24 15.2071L14.5877 11.574L24 8.18819ZM9 15.8487L21 20.4805V37.6263L9 32.9945V15.8487ZM27 37.6263V20.4805L39 15.8487V32.9945L27 37.6263ZM25.354 2.29885C24.4788 1.98402 23.5212 1.98402 22.646 2.29885L4.98454 8.65208C3.7939 9.08038 3 10.2097 3 11.475V34.3663C3 36.0196 4.01719 37.5026 5.55962 38.098L22.9197 44.7987C23.6149 45.0671 24.3851 45.0671 25.0803 44.7987L42.4404 38.098C43.9828 37.5026 45 36.0196 45 34.3663V11.475C45 10.2097 44.2061 9.08038 43.0155 8.65208L25.354 2.29885Z" fill="currentColor" fill-rule="evenodd"></path>
+                    </svg>
+                </div>
+                <h2 class="text-xl font-bold tracking-tight">MarketBoost</h2>
+            </div>
+            
+            <!-- Desktop Navigation -->
+            <div class="hidden md:flex flex-1 justify-end gap-8">
+                <nav class="flex items-center gap-8">
+                    <a class="text-sm font-medium text-[var(--text-secondary)] hover:text-[var(--primary-color)] transition-colors" href="/shop">Services</a>
+                    <a class="text-sm font-medium text-[var(--text-secondary)] hover:text-[var(--primary-color)] transition-colors" href="roi-calculator.html">ROI Calculator</a>
+                    <a class="text-sm font-medium text-[var(--text-secondary)] hover:text-[var(--primary-color)] transition-colors" href="#about">About Us</a>
+                </nav>
+                <div class="flex gap-2">
+                    <button class="btn-primary">
+                        <span class="truncate">Get Started</span>
+                    </button>
+                    <button class="btn-secondary">
+                        <span class="truncate">Log In</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button class="md:hidden p-2" data-mobile-menu-toggle aria-label="Toggle mobile menu">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+
+            <!-- Mobile Menu -->
+            <div class="hidden md:hidden absolute top-full left-0 w-full bg-white border-b shadow-lg z-50" data-mobile-menu>
+                <nav class="flex flex-col p-4 space-y-2">
+                    <a class="text-sm font-medium text-[var(--text-secondary)] hover:text-[var(--primary-color)] transition-colors py-2" href="/shop">Services</a>
+                    <a class="text-sm font-medium text-[var(--text-secondary)] hover:text-[var(--primary-color)] transition-colors py-2" href="roi-calculator.html">ROI Calculator</a>
+                    <a class="text-sm font-medium text-[var(--text-secondary)] hover:text-[var(--primary-color)] transition-colors py-2" href="#about">About Us</a>
+                    <div class="flex flex-col gap-2 pt-4">
+                        <button class="btn-primary w-full">Get Started</button>
+                        <button class="btn-secondary w-full">Log In</button>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="flex-1">
+            <!-- Hero Section -->
+            <section class="py-20 px-4 sm:px-6 lg:px-8">
+                <div class="max-w-7xl mx-auto">
+                    <div class="relative rounded-2xl overflow-hidden">
+                        <div class="absolute inset-0 bg-cover bg-center bg-hero"></div>
+                        <div class="relative z-10 flex flex-col items-center justify-center min-h-[480px] text-center p-8">
+                            
+                            <h1 class="text-5xl font-extrabold text-white leading-tight mb-4">U.S. SMB Marketing, Simplified</h1>
+                            <p class="text-lg text-gray-100 leading-relaxed max-w-3xl">Transparent pricing, U.S.-style invoicing, and fast delivery across SEO, social, content, email, and PPC.</p>
+                            
+                            <div class="mt-8 flex flex-col items-center space-y-4">
+                                <a href="/shop" class="bg-[var(--primary-color)] text-white px-8 py-4 rounded-full hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)] focus:ring-opacity-50 transition duration-300 ease-in-out text-lg font-bold tracking-wide shadow-lg">
+                                    See Packages & Pricing
+                                </a>
+                                <p class="text-sm text-gray-300">Clear pricing • Fast delivery • U.S.-based team</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Industry & Goal Tags -->
+            <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
+                <div class="flex flex-wrap justify-center gap-3 mb-4">
+                    <button class="bg-white rounded-full shadow-lg px-5 py-2 text-sm font-medium text-[var(--text-secondary)] hover:bg-[var(--secondary-color)] hover:text-[var(--primary-color)] transition-colors">Restaurants</button>
+                    <button class="bg-white rounded-full shadow-lg px-5 py-2 text-sm font-medium text-[var(--text-secondary)] hover:bg-[var(--secondary-color)] hover:text-[var(--primary-color)] transition-colors">Retail</button>
+                    <button class="bg-white rounded-full shadow-lg px-5 py-2 text-sm font-medium text-[var(--text-secondary)] hover:bg-[var(--secondary-color)] hover:text-[var(--primary-color)] transition-colors">Healthcare</button>
+                    <button class="bg-white rounded-full shadow-lg px-5 py-2 text-sm font-medium text-[var(--text-secondary)] hover:bg-[var(--secondary-color)] hover:text-[var(--primary-color)] transition-colors">Real Estate</button>
+                    <button class="bg-white rounded-full shadow-lg px-5 py-2 text-sm font-medium text-[var(--text-secondary)] hover:bg-[var(--secondary-color)] hover:text-[var(--primary-color)] transition-colors">Professional Services</button>
+                    <button class="bg-white rounded-full shadow-lg px-5 py-2 text-sm font-medium text-[var(--text-secondary)] hover:bg-[var(--secondary-color)] hover:text-[var(--primary-color)] transition-colors">E-commerce</button>
+                </div>
+                <div class="flex flex-wrap justify-center gap-3">
+                    <button class="bg-white rounded-full shadow-lg px-5 py-2 text-sm font-medium text-[var(--text-secondary)] hover:bg-[var(--secondary-color)] hover:text-[var(--primary-color)] transition-colors">Increase Leads</button>
+                    <button class="bg-white rounded-full shadow-lg px-5 py-2 text-sm font-medium text-[var(--text-secondary)] hover:bg-[var(--secondary-color)] hover:text-[var(--primary-color)] transition-colors">Boost Sales</button>
+                    <button class="bg-white rounded-full shadow-lg px-5 py-2 text-sm font-medium text-[var(--text-secondary)] hover:bg-[var(--secondary-color)] hover:text-[var(--primary-color)] transition-colors">Improve Brand Awareness</button>
+                    <button class="bg-white rounded-full shadow-lg px-5 py-2 text-sm font-medium text-[var(--text-secondary)] hover:bg-[var(--secondary-color)] hover:text-[var(--primary-color)] transition-colors">Enhance Customer Loyalty</button>
+                </div>
+            </section>
+
+            <!-- Best-Selling Packages -->
+            <section class="bg-[var(--secondary-color)] py-20">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <h2 class="text-4xl font-bold text-[var(--text-primary)] leading-snug mb-12 text-center">Best-Selling Packages</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <!-- Good Package -->
+                        <div class="bg-white rounded-2xl shadow-lg p-8 flex flex-col relative overflow-hidden">
+                            <!-- Value Badge -->
+                            <div class="absolute top-4 right-4 bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-bold">
+                                Save 60%
+                            </div>
+                            <div class="flex-grow">
+                                <h3 class="text-2xl font-bold text-[var(--text-primary)] mb-2">Good</h3>
+                                <!-- Price Anchoring -->
+                                <div class="mb-2">
+                                    <span class="text-lg text-gray-400 line-through">$1,250/month</span>
+                                    <span class="text-sm text-green-600 font-medium ml-2">Regular Price</span>
+                                </div>
+                                <p class="flex items-baseline gap-1 text-[var(--text-primary)] mb-4">
+                                    <span class="text-5xl font-extrabold tracking-tight text-[var(--primary-color)]">$499</span>
+                                    <span class="text-lg font-semibold">/month</span>
+                                </p>
+                                <!-- Value Stack -->
+                                <div class="bg-gray-50 rounded-lg p-4 mb-6">
+                                    <div class="text-sm font-semibold text-gray-700 mb-2">What You Get (Value: $1,250)</div>
+                                    <div class="space-y-1 text-sm text-gray-600">
+                                        <div class="flex justify-between">
+                                            <span>SEO Optimization</span>
+                                            <span>$400</span>
+                                        </div>
+                                        <div class="flex justify-between">
+                                            <span>Social Media Management</span>
+                                            <span>$500</span>
+                                        </div>
+                                        <div class="flex justify-between">
+                                            <span>Email Marketing</span>
+                                            <span>$350</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <ul class="space-y-3 text-[var(--text-secondary)]">
+                                    <li class="flex items-center gap-3">
+                                        <svg class="text-[var(--primary-color)]" fill="currentColor" height="20px" viewBox="0 0 256 256" width="20px" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"></path>
+                                        </svg>
+                                        Basic SEO
+                                    </li>
+                                    <li class="flex items-center gap-3">
+                                        <svg class="text-[var(--primary-color)]" fill="currentColor" height="20px" viewBox="0 0 256 256" width="20px" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"></path>
+                                        </svg>
+                                        Social Media Management
+                                    </li>
+                                    <li class="flex items-center gap-3">
+                                        <svg class="text-[var(--primary-color)]" fill="currentColor" height="20px" viewBox="0 0 256 256" width="20px" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"></path>
+                                        </svg>
+                                        Email Marketing
+                                    </li>
+                                </ul>
+                            </div>
+                            <button class="mt-8 w-full bg-[var(--secondary-color)] text-[var(--primary-color)] border border-[var(--primary-color)] px-6 py-3 rounded-full hover:bg-[var(--primary-color)] hover:text-white focus:outline-none focus:ring-2 focus:ring-primary-color focus:ring-opacity-50 transition duration-300 ease-in-out font-bold">Choose Good</button>
+                            
+                            <!-- Risk Reversal -->
+                            <div class="mt-4 text-center">
+                                <div class="flex items-center justify-center space-x-2 text-sm text-green-600">
+                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                    </svg>
+                                    <span class="font-medium">90-Day Money-Back Guarantee</span>
+                                </div>
+                                <div class="text-xs text-gray-500 mt-1">Cancel anytime, no questions asked</div>
+                            </div>
+                        </div>
+
+                        <!-- Better Package -->
+                        <div class="bg-white rounded-2xl shadow-lg p-8 flex flex-col border-2 border-[var(--primary-color)] relative">
+                            <div class="absolute top-0 -translate-y-1/2 left-1/2 -translate-x-1/2 bg-[var(--primary-color)] text-white px-4 py-1 text-sm font-bold rounded-full">Most Popular</div>
+                            <div class="flex-grow">
+                                <h3 class="text-2xl font-bold text-[var(--text-primary)] mb-2">Better</h3>
+                                <p class="flex items-baseline gap-1 text-[var(--text-primary)] mb-6">
+                                    <span class="text-5xl font-extrabold tracking-tight">$999</span>
+                                    <span class="text-lg font-semibold">/month</span>
+                                </p>
+                                <ul class="space-y-3 text-[var(--text-secondary)]">
+                                    <li class="flex items-center gap-3">
+                                        <svg class="text-[var(--primary-color)]" fill="currentColor" height="20px" viewBox="0 0 256 256" width="20px" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"></path>
+                                        </svg>
+                                        Advanced SEO
+                                    </li>
+                                    <li class="flex items-center gap-3">
+                                        <svg class="text-[var(--primary-color)]" fill="currentColor" height="20px" viewBox="0 0 256 256" width="20px" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"></path>
+                                        </svg>
+                                        Social Media Ads
+                                    </li>
+                                    <li class="flex items-center gap-3">
+                                        <svg class="text-[var(--primary-color)]" fill="currentColor" height="20px" viewBox="0 0 256 256" width="20px" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"></path>
+                                        </svg>
+                                        Content Marketing
+                                    </li>
+                                    <li class="flex items-center gap-3">
+                                        <svg class="text-[var(--primary-color)]" fill="currentColor" height="20px" viewBox="0 0 256 256" width="20px" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"></path>
+                                        </svg>
+                                        Email Automation
+                                    </li>
+                                </ul>
+                            </div>
+                            <button class="mt-8 w-full bg-[var(--primary-color)] text-white px-6 py-3 rounded-full hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-primary-color focus:ring-opacity-50 transition duration-300 ease-in-out font-bold">Choose Better</button>
+                        </div>
+
+                        <!-- Best Package -->
+                        <div class="bg-white rounded-2xl shadow-lg p-8 flex flex-col">
+                            <div class="flex-grow">
+                                <h3 class="text-2xl font-bold text-[var(--text-primary)] mb-2">Best</h3>
+                                <p class="flex items-baseline gap-1 text-[var(--text-primary)] mb-6">
+                                    <span class="text-5xl font-extrabold tracking-tight">$1499</span>
+                                    <span class="text-lg font-semibold">/month</span>
+                                </p>
+                                <ul class="space-y-3 text-[var(--text-secondary)]">
+                                    <li class="flex items-center gap-3">
+                                        <svg class="text-[var(--primary-color)]" fill="currentColor" height="20px" viewBox="0 0 256 256" width="20px" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"></path>
+                                        </svg>
+                                        Premium SEO
+                                    </li>
+                                    <li class="flex items-center gap-3">
+                                        <svg class="text-[var(--primary-color)]" fill="currentColor" height="20px" viewBox="0 0 256 256" width="20px" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"></path>
+                                        </svg>
+                                        Social Media Ads Pro
+                                    </li>
+                                    <li class="flex items-center gap-3">
+                                        <svg class="text-[var(--primary-color)]" fill="currentColor" height="20px" viewBox="0 0 256 256" width="20px" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"></path>
+                                        </svg>
+                                        Content Strategy
+                                    </li>
+                                    <li class="flex items-center gap-3">
+                                        <svg class="text-[var(--primary-color)]" fill="currentColor" height="20px" viewBox="0 0 256 256" width="20px" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"></path>
+                                        </svg>
+                                        Email Marketing Pro
+                                    </li>
+                                    <li class="flex items-center gap-3">
+                                        <svg class="text-[var(--primary-color)]" fill="currentColor" height="20px" viewBox="0 0 256 256" width="20px" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"></path>
+                                        </svg>
+                                        Dedicated Account Manager
+                                    </li>
+                                </ul>
+                            </div>
+                            <button class="mt-8 w-full bg-[var(--secondary-color)] text-[var(--primary-color)] border border-[var(--primary-color)] px-6 py-3 rounded-full hover:bg-[var(--primary-color)] hover:text-white focus:outline-none focus:ring-2 focus:ring-primary-color focus:ring-opacity-50 transition duration-300 ease-in-out font-bold">Choose Best</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Customer Testimonials -->
+            <section class="py-20">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="text-center mb-16">
+                        <h2 class="text-4xl font-bold text-[var(--text-primary)] leading-snug mb-4">What Our Clients Say</h2>
+                        <p class="text-lg text-[var(--text-secondary)] max-w-2xl mx-auto">Don't just take our word for it. See how MarketBoost has helped businesses like yours achieve real results.</p>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <!-- Testimonial 1 -->
+                        <div class="bg-white rounded-xl shadow-lg p-6 relative">
+                            <div class="flex items-center mb-4">
+                                <div class="flex text-yellow-400">
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                                    </svg>
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                                    </svg>
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                                    </svg>
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                                    </svg>
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <blockquote class="text-[var(--text-secondary)] mb-4">
+                                "MarketBoost increased our leads by 300% in just 3 months. Their SEO strategy completely transformed our online presence."
+                            </blockquote>
+                            <div class="flex items-center">
+                                <img class="w-12 h-12 rounded-full object-cover mr-4" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face" alt="Sarah Johnson" loading="lazy">
+                                <div>
+                                    <div class="font-semibold text-[var(--text-primary)]">Sarah Johnson</div>
+                                    <div class="text-sm text-[var(--text-secondary)]">CEO, Local Bistro</div>
+                                </div>
+                            </div>
+                            <button class="absolute top-4 right-4 text-[var(--primary-color)] hover:text-red-700 transition-colors group" onclick="openVideoModal()" title="Watch video testimonial">
+                                <div class="relative">
+                                    <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z"></path>
+                                    </svg>
+                                    <div class="absolute -top-1 -right-1 w-3 h-3 bg-red-500 rounded-full animate-pulse"></div>
+                                </div>
+                            </button>
+                        </div>
+
+                        <!-- Testimonial 2 -->
+                        <div class="bg-white rounded-xl shadow-lg p-6 relative">
+                            <div class="flex items-center mb-4">
+                                <div class="flex text-yellow-400">
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                                    </svg>
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                                    </svg>
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                                    </svg>
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                                    </svg>
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <blockquote class="text-[var(--text-secondary)] mb-4">
+                                "The ROI has been incredible. We went from $10k to $45k monthly revenue after implementing their social media strategy."
+                            </blockquote>
+                            <div class="flex items-center">
+                                <img class="w-12 h-12 rounded-full object-cover mr-4" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face" alt="Mike Chen" loading="lazy">
+                                <div>
+                                    <div class="font-semibold text-[var(--text-primary)]">Mike Chen</div>
+                                    <div class="text-sm text-[var(--text-secondary)]">Owner, Tech Repair Shop</div>
+                                </div>
+                            </div>
+                            <div class="absolute top-4 right-4 text-[var(--primary-color)] opacity-20">
+                                <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M3.691 6.292C5.094 4.771 7.217 4 10 4h1v2.819l-.804.161c-1.37.274-2.323.813-2.833 1.604A2.902 2.902 0 0 0 6.925 10H10a1 1 0 0 1 1 1v7c0 1.103-.897 2-2 2H3a1 1 0 0 1-1-1v-7c0-1.103.897-2 2-2h2.357a3.968 3.968 0 0 1 .334-1.708z"></path>
+                                    <path d="M15.691 6.292C17.094 4.771 19.217 4 22 4h1v2.819l-.804.161c-1.37.274-2.323.813-2.833 1.604A2.902 2.902 0 0 0 18.925 10H22a1 1 0 0 1 1 1v7c0 1.103-.897 2-2 2h-6a1 1 0 0 1-1-1v-7c0-1.103.897-2 2-2h2.357a3.968 3.968 0 0 1 .334-1.708z"></path>
+                                </svg>
+                            </div>
+                        </div>
+
+                        <!-- Testimonial 3 -->
+                        <div class="bg-white rounded-xl shadow-lg p-6 relative">
+                            <div class="flex items-center mb-4">
+                                <div class="flex text-yellow-400">
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                                    </svg>
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                                    </svg>
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                                    </svg>
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                                    </svg>
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <blockquote class="text-[var(--text-secondary)] mb-4">
+                                "Professional, reliable, and results-driven. MarketBoost helped us reach customers we never thought possible."
+                            </blockquote>
+                            <div class="flex items-center">
+                                <img class="w-12 h-12 rounded-full object-cover mr-4" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=face" alt="Lisa Rodriguez" loading="lazy">
+                                <div>
+                                    <div class="font-semibold text-[var(--text-primary)]">Lisa Rodriguez</div>
+                                    <div class="text-sm text-[var(--text-secondary)]">Founder, Wellness Studio</div>
+                                </div>
+                            </div>
+                            <div class="absolute top-4 right-4 text-[var(--primary-color)] opacity-20">
+                                <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M3.691 6.292C5.094 4.771 7.217 4 10 4h1v2.819l-.804.161c-1.37.274-2.323.813-2.833 1.604A2.902 2.902 0 0 0 6.925 10H10a1 1 0 0 1 1 1v7c0 1.103-.897 2-2 2H3a1 1 0 0 1-1-1v-7c0-1.103.897-2 2-2h2.357a3.968 3.968 0 0 1 .334-1.708z"></path>
+                                    <path d="M15.691 6.292C17.094 4.771 19.217 4 22 4h1v2.819l-.804.161c-1.37.274-2.323.813-2.833 1.604A2.902 2.902 0 0 0 18.925 10H22a1 1 0 0 1 1 1v7c0 1.103-.897 2-2 2h-6a1 1 0 0 1-1-1v-7c0-1.103.897-2 2-2h2.357a3.968 3.968 0 0 1 .334-1.708z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Trust Indicators -->
+                    <div class="mt-16 text-center">
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 items-center">
+                            <div class="text-center">
+                                <div class="text-3xl font-bold text-[var(--primary-color)]">500+</div>
+                                <div class="text-sm text-[var(--text-secondary)]">Happy Clients</div>
+                            </div>
+                            <div class="text-center">
+                                <div class="text-3xl font-bold text-[var(--primary-color)]">1200%</div>
+                                <div class="text-sm text-[var(--text-secondary)]">Average ROI</div>
+                            </div>
+                            <div class="text-center">
+                                <div class="text-3xl font-bold text-[var(--primary-color)]">24hr</div>
+                                <div class="text-sm text-[var(--text-secondary)]">Response Time</div>
+                            </div>
+                            <div class="text-center">
+                                <div class="text-3xl font-bold text-[var(--primary-color)]">98%</div>
+                                <div class="text-sm text-[var(--text-secondary)]">Client Retention</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Interactive Service Selector -->
+            <section class="bg-gradient-to-br from-[var(--secondary-color)] to-white py-20">
+                <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="text-center mb-12">
+                        <h2 class="text-4xl font-bold text-[var(--text-primary)] leading-snug mb-4">Find Your Perfect Marketing Package</h2>
+                        <p class="text-lg text-[var(--text-secondary)]">Answer a few quick questions to get personalized recommendations</p>
+                    </div>
+                    
+                    <div class="bg-white rounded-xl shadow-lg p-8" id="service-selector">
+                        <!-- Step Indicator -->
+                        <div class="mb-8">
+                            <div class="flex items-center justify-center mb-4">
+                                <span class="text-sm text-[var(--text-secondary)]">Step <span id="current-step">1</span> of <span id="total-steps">3</span></span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-[var(--primary-color)] h-2 rounded-full transition-all duration-300 progress-bar-33" id="progress-bar"></div>
+                            </div>
+                        </div>
+
+                        <!-- Question 1: Business Type -->
+                        <div class="quiz-step active" id="step-1">
+                            <h3 class="text-xl font-semibold text-[var(--text-primary)] mb-6 text-center">What type of business do you have?</h3>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <button class="quiz-option p-4 border-2 border-gray-200 rounded-lg hover:border-[var(--primary-color)] hover:bg-[var(--secondary-color)] transition-all" data-value="restaurant">
+                                    <div class="text-2xl mb-2">🍽️</div>
+                                    <div class="font-medium">Restaurant/Food</div>
+                                </button>
+                                <button class="quiz-option p-4 border-2 border-gray-200 rounded-lg hover:border-[var(--primary-color)] hover:bg-[var(--secondary-color)] transition-all" data-value="retail">
+                                    <div class="text-2xl mb-2">🏪</div>
+                                    <div class="font-medium">Retail/E-commerce</div>
+                                </button>
+                                <button class="quiz-option p-4 border-2 border-gray-200 rounded-lg hover:border-[var(--primary-color)] hover:bg-[var(--secondary-color)] transition-all" data-value="healthcare">
+                                    <div class="text-2xl mb-2">🏥</div>
+                                    <div class="font-medium">Healthcare/Medical</div>
+                                </button>
+                                <button class="quiz-option p-4 border-2 border-gray-200 rounded-lg hover:border-[var(--primary-color)] hover:bg-[var(--secondary-color)] transition-all" data-value="professional">
+                                    <div class="text-2xl mb-2">💼</div>
+                                    <div class="font-medium">Professional Services</div>
+                                </button>
+                                <button class="quiz-option p-4 border-2 border-gray-200 rounded-lg hover:border-[var(--primary-color)] hover:bg-[var(--secondary-color)] transition-all" data-value="realestate">
+                                    <div class="text-2xl mb-2">🏠</div>
+                                    <div class="font-medium">Real Estate</div>
+                                </button>
+                                <button class="quiz-option p-4 border-2 border-gray-200 rounded-lg hover:border-[var(--primary-color)] hover:bg-[var(--secondary-color)] transition-all" data-value="other">
+                                    <div class="text-2xl mb-2">💡</div>
+                                    <div class="font-medium">Other</div>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Question 2: Goals -->
+                        <div class="quiz-step hidden" id="step-2">
+                            <h3 class="text-xl font-semibold text-[var(--text-primary)] mb-6 text-center">What's your primary goal?</h3>
+                            <div class="grid grid-cols-1 gap-4">
+                                <button class="quiz-option p-4 border-2 border-gray-200 rounded-lg hover:border-[var(--primary-color)] hover:bg-[var(--secondary-color)] transition-all text-left" data-value="leads">
+                                    <div class="font-medium">📈 Generate More Leads</div>
+                                    <div class="text-sm text-[var(--text-secondary)] mt-1">Attract potential customers and grow your contact list</div>
+                                </button>
+                                <button class="quiz-option p-4 border-2 border-gray-200 rounded-lg hover:border-[var(--primary-color)] hover:bg-[var(--secondary-color)] transition-all text-left" data-value="sales">
+                                    <div class="font-medium">💰 Increase Sales Revenue</div>
+                                    <div class="text-sm text-[var(--text-secondary)] mt-1">Convert more visitors into paying customers</div>
+                                </button>
+                                <button class="quiz-option p-4 border-2 border-gray-200 rounded-lg hover:border-[var(--primary-color)] hover:bg-[var(--secondary-color)] transition-all text-left" data-value="awareness">
+                                    <div class="font-medium">📢 Build Brand Awareness</div>
+                                    <div class="text-sm text-[var(--text-secondary)] mt-1">Get your name out there and increase visibility</div>
+                                </button>
+                                <button class="quiz-option p-4 border-2 border-gray-200 rounded-lg hover:border-[var(--primary-color)] hover:bg-[var(--secondary-color)] transition-all text-left" data-value="retention">
+                                    <div class="font-medium">🤝 Improve Customer Retention</div>
+                                    <div class="text-sm text-[var(--text-secondary)] mt-1">Keep existing customers engaged and coming back</div>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Question 3: Budget -->
+                        <div class="quiz-step hidden" id="step-3">
+                            <h3 class="text-xl font-semibold text-[var(--text-primary)] mb-6 text-center">What's your monthly marketing budget?</h3>
+                            <div class="grid grid-cols-1 gap-4">
+                                <button class="quiz-option p-4 border-2 border-gray-200 rounded-lg hover:border-[var(--primary-color)] hover:bg-[var(--secondary-color)] transition-all text-left" data-value="500">
+                                    <div class="font-medium">💡 $500 - $999/month</div>
+                                    <div class="text-sm text-[var(--text-secondary)] mt-1">Perfect for getting started with essential marketing</div>
+                                </button>
+                                <button class="quiz-option p-4 border-2 border-gray-200 rounded-lg hover:border-[var(--primary-color)] hover:bg-[var(--secondary-color)] transition-all text-left" data-value="1000">
+                                    <div class="font-medium">🚀 $1000 - $1499/month</div>
+                                    <div class="text-sm text-[var(--text-secondary)] mt-1">Great for comprehensive marketing with advanced features</div>
+                                </button>
+                                <button class="quiz-option p-4 border-2 border-gray-200 rounded-lg hover:border-[var(--primary-color)] hover:bg-[var(--secondary-color)] transition-all text-left" data-value="1500">
+                                    <div class="font-medium">⭐ $1500+/month</div>
+                                    <div class="text-sm text-[var(--text-secondary)] mt-1">Premium service with dedicated account management</div>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Results -->
+                        <div class="quiz-step hidden" id="results">
+                            <div class="text-center">
+                                <div class="text-6xl mb-4">🎉</div>
+                                <h3 class="text-2xl font-bold text-[var(--text-primary)] mb-4">Perfect Match Found!</h3>
+                                <div id="recommendation" class="mb-6"></div>
+                                <button class="btn-primary" onclick="window.location.href='services.html'">
+                                    View Detailed Services
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Navigation Buttons -->
+                        <div class="flex justify-between mt-8" id="quiz-navigation">
+                            <button class="btn-secondary hidden" id="prev-btn" onclick="previousStep()">Previous</button>
+                            <div></div>
+                            <button class="btn-primary hidden" id="next-btn" onclick="nextStep()">Next</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- How Buying Works -->
+            <section class="bg-[var(--secondary-color)] py-20">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <h2 class="text-4xl font-bold text-[var(--text-primary)] leading-snug mb-12 text-center">How It Works</h2>
+                    <div class="relative max-w-2xl mx-auto">
+                        <div aria-hidden="true" class="absolute left-1/2 -translate-x-1/2 h-full w-0.5 bg-gray-300"></div>
+                        <div class="relative space-y-12">
+                            <div class="flex items-center gap-8">
+                                <div class="bg-[var(--primary-color)] text-white rounded-full h-12 w-12 flex items-center justify-center text-2xl font-bold z-10">1</div>
+                                <div class="bg-white p-6 rounded-lg shadow-md w-full">
+                                    <h3 class="text-xl font-semibold text-[var(--text-primary)] mb-2">Select Your Services</h3>
+                                    <p class="text-[var(--text-secondary)]">Choose from our proven marketing packages or individual services.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-8">
+                                <div class="bg-[var(--primary-color)] text-white rounded-full h-12 w-12 flex items-center justify-center text-2xl font-bold z-10">2</div>
+                                <div class="bg-white p-6 rounded-lg shadow-md w-full">
+                                    <h3 class="text-xl font-semibold text-[var(--text-primary)] mb-2">Customize Your Plan</h3>
+                                    <p class="text-[var(--text-secondary)]">Tailor your services to fit your business needs and goals.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-8">
+                                <div class="bg-[var(--primary-color)] text-white rounded-full h-12 w-12 flex items-center justify-center text-2xl font-bold z-10">3</div>
+                                <div class="bg-white p-6 rounded-lg shadow-md w-full">
+                                    <h3 class="text-xl font-semibold text-[var(--text-primary)] mb-2">Launch Your Campaign</h3>
+                                    <p class="text-[var(--text-secondary)]">Watch your business grow with our expert execution.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-16 flex justify-center gap-4">
+                        <button class="bg-[var(--primary-color)] text-white px-8 py-4 rounded-full hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-primary-color focus:ring-opacity-50 transition duration-300 ease-in-out text-lg font-bold">Get Started</button>
+                        <a href="/shop" class="bg-white text-[var(--primary-color)] border border-[var(--primary-color)] px-8 py-4 rounded-full hover:bg-[var(--primary-color)] hover:text-white focus:outline-none focus:ring-2 focus:ring-primary-color focus:ring-opacity-50 transition duration-300 ease-in-out text-lg font-bold">View Services</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- FAQ -->
+            <section class="py-20">
+                <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <h2 class="text-4xl font-bold text-[var(--text-primary)] leading-snug mb-12 text-center">Frequently Asked Questions</h2>
+                    <div class="space-y-4">
+                        <details class="group bg-white p-6 rounded-lg shadow-md">
+                            <summary class="flex cursor-pointer items-center justify-between text-lg font-semibold text-[var(--text-primary)]">
+                                What services do you offer?
+                                <svg class="transform transition-transform duration-300 group-open:rotate-180" fill="currentColor" height="20px" viewBox="0 0 256 256" width="20px" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"></path>
+                                </svg>
+                            </summary>
+                            <p class="mt-4 text-[var(--text-secondary)]">We offer a comprehensive range of digital marketing services including SEO, social media management, content marketing, PPC advertising, email marketing, and more. All services are designed specifically for small and medium-sized businesses.</p>
+                        </details>
+                        
+                        <details class="group bg-white p-6 rounded-lg shadow-md">
+                            <summary class="flex cursor-pointer items-center justify-between text-lg font-semibold text-[var(--text-primary)]">
+                                How long does it take to see results?
+                                <svg class="transform transition-transform duration-300 group-open:rotate-180" fill="currentColor" height="20px" viewBox="0 0 256 256" width="20px" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"></path>
+                                </svg>
+                            </summary>
+                            <p class="mt-4 text-[var(--text-secondary)]">Results vary by service type. Social media and PPC campaigns can show results within 2-4 weeks, while SEO typically takes 3-6 months for significant improvements. We provide regular reports to track your progress.</p>
+                        </details>
+
+                        <details class="group bg-white p-6 rounded-lg shadow-md">
+                            <summary class="flex cursor-pointer items-center justify-between text-lg font-semibold text-[var(--text-primary)]">
+                                What is your pricing structure?
+                                <svg class="transform transition-transform duration-300 group-open:rotate-180" fill="currentColor" height="20px" viewBox="0 0 256 256" width="20px" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"></path>
+                                </svg>
+                            </summary>
+                            <p class="mt-4 text-[var(--text-secondary)]">We offer transparent monthly pricing with our Good, Better, and Best packages starting at $499/month. All pricing is clearly displayed with no hidden fees. Custom packages are also available for specific business needs.</p>
+                        </details>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="bg-gray-50 border-t border-gray-200">
+            <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8 text-center">
+                <div class="flex justify-center space-x-6 mb-8">
+                    <a class="text-[var(--text-secondary)] hover:text-[var(--primary-color)] transition-colors" href="#">
+                        <span class="sr-only">Twitter</span>
+                        <svg fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M247.39,68.94A8,8,0,0,0,240,64H209.57A48.66,48.66,0,0,0,168.1,40a46.91,46.91,0,0,0-33.75,13.7A47.9,47.9,0,0,0,120,88v6.09C79.74,83.47,46.81,50.72,46.46,50.37a8,8,0,0,0-13.65,4.92c-4.31,47.79,9.57,79.77,22,98.18a110.93,110.93,0,0,0,21.88,24.2c-15.23,17.53-39.21,26.74-39.47,26.84a8,8,0,0,0-3.85,11.93c.75,1.12,3.75,5.05,11.08,8.72C53.51,229.7,65.48,232,80,232c70.67,0,129.72-54.42,135.75-124.44l29.91-29.9A8,8,0,0,0,247.39,68.94Zm-45,29.41a8,8,0,0,0-2.32,5.14C196,166.58,143.28,216,80,216c-10.56,0-18-1.4-23.22-3.08,11.51-6.25,27.56-17,37.88-32.48A8,8,0,0,0,92,169.08c-.47-.27-43.91-26.34-44-96,16,13,45.25,33.17,78.67,38.79A8,8,0,0,0,136,104V88a32,32,0,0,1,9.6-22.92A30.94,30.94,0,0,1,167.9,56c12.66.16,24.49,7.88,29.44,19.21A8,8,0,0,0,204.67,80h16Z"></path>
+                        </svg>
+                    </a>
+                    <a class="text-[var(--text-secondary)] hover:text-[var(--primary-color)] transition-colors" href="#">
+                        <span class="sr-only">Facebook</span>
+                        <svg fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm8,191.63V152h24a8,8,0,0,0,0-16H136V112a16,16,0,0,1,16-16h16a8,8,0,0,0,0-16H152a32,32,0,0,0-32,32v24H96a8,8,0,0,0,0,16h24v63.63a88,88,0,1,1,16,0Z"></path>
+                        </svg>
+                    </a>
+                    <a class="text-[var(--text-secondary)] hover:text-[var(--primary-color)] transition-colors" href="#">
+                        <span class="sr-only">LinkedIn</span>
+                        <svg fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M216,24H40A16,16,0,0,0,24,40V216a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V40A16,16,0,0,0,216,24ZM96,176a8,8,0,0,1-16,0V112a8,8,0,0,1,16,0ZM88,96a12,12,0,1,1,12-12A12,12,0,0,1,88,96Zm96,80a8,8,0,0,1-16,0V140a20,20,0,0,0-40,0v36a8,8,0,0,1-16,0V112a8,8,0,0,1,15.79-1.78A36,36,0,0,1,184,140Z"></path>
+                        </svg>
+                    </a>
+                </div>
+                <nav class="flex flex-wrap justify-center gap-x-6 gap-y-2 mb-8">
+                    <a class="text-base text-[var(--text-secondary)] hover:text-[var(--primary-color)] transition-colors" href="#">Privacy Policy</a>
+                    <a class="text-base text-[var(--text-secondary)] hover:text-[var(--primary-color)] transition-colors" href="#">Terms of Service</a>
+                    <a class="text-base text-[var(--text-secondary)] hover:text-[var(--primary-color)] transition-colors" href="#">Contact Us</a>
+                </nav>
+                <p class="text-base text-gray-400">© 2024 MarketBoost. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Sticky CTA Bar -->
+    <div id="sticky-cta" class="fixed bottom-0 left-0 right-0 bg-[var(--primary-color)] text-white p-4 shadow-lg transform translate-y-full transition-transform duration-300 z-50">
+        <div class="max-w-4xl mx-auto flex items-center justify-between">
+            <div class="flex items-center space-x-4">
+                <div class="hidden sm:block">
+                    <div class="font-semibold">Ready to grow your business?</div>
+                    <div class="text-sm opacity-90">Get your free marketing audit today</div>
+                </div>
+                <div class="sm:hidden">
+                    <div class="font-semibold">Free Marketing Audit</div>
+                </div>
+            </div>
+            <div class="flex items-center space-x-3">
+                <button class="bg-white text-[var(--primary-color)] px-6 py-2 rounded-full font-bold hover:bg-gray-100 transition" onclick="scrollToAuditForm()">
+                    Get Free Audit
+                </button>
+                <button class="text-white hover:text-gray-200 transition" onclick="hideStickyBar()" aria-label="Hide notification bar" title="Close">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Exit Intent Popup -->
+    <div id="exit-intent-popup" class="fixed inset-0 bg-black bg-opacity-50 z-[100] hidden">
+        <div class="flex items-center justify-center min-h-screen p-4">
+            <div class="bg-white rounded-xl max-w-md w-full p-8 relative animate-pulse">
+                <button class="absolute top-4 right-4 text-gray-400 hover:text-gray-600" onclick="closeExitPopup()" aria-label="Close popup" title="Close">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                    </svg>
+                </button>
+                
+                <div class="text-center">
+                    <div class="text-4xl mb-4">🎯</div>
+                    <h3 class="text-2xl font-bold text-[var(--text-primary)] mb-4">Wait! Don't Leave Empty-Handed</h3>
+                    <p class="text-[var(--text-secondary)] mb-6">Get a FREE marketing audit before you go. We'll show you exactly how to increase your leads by 300%.</p>
+                    
+                    <form class="space-y-4" id="exit-popup-form">
+                        <input type="email" placeholder="Enter your email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[var(--primary-color)] focus:border-transparent" required>
+                        <input type="text" placeholder="Your website URL" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[var(--primary-color)] focus:border-transparent">
+                        <button type="submit" class="w-full bg-[var(--primary-color)] text-white py-3 rounded-lg font-bold hover:bg-red-700 transition">
+                            Get My Free Audit (Worth $500)
+                        </button>
+                    </form>
+                    
+                    <div class="mt-4 text-sm text-gray-500">
+                        <div class="flex items-center justify-center space-x-2">
+                            <svg class="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span>No spam. Unsubscribe anytime.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Social Proof Notifications -->
+    <div id="social-proof-notification" class="fixed bottom-20 left-4 bg-white rounded-lg shadow-lg p-4 max-w-sm transform translate-x-[-400px] transition-transform duration-500 z-40">
+        <div class="flex items-center space-x-3">
+            <img class="w-10 h-10 rounded-full object-cover" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=50&h=50&fit=crop&crop=face" alt="Recent customer" loading="lazy">
+            <div class="flex-1">
+                <div class="text-sm font-medium text-gray-900" id="notification-name">Sarah from Miami</div>
+                <div class="text-xs text-gray-500" id="notification-action">just signed up for the Better package</div>
+            </div>
+            <div class="text-green-500">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                </svg>
+            </div>
+        </div>
+    </div>
+
+    <!-- Video Testimonials Modal -->
+    <div id="video-testimonial-modal" class="fixed inset-0 bg-black bg-opacity-75 z-[100] hidden">
+        <div class="flex items-center justify-center min-h-screen p-4">
+            <div class="bg-white rounded-xl max-w-4xl w-full relative">
+                <button class="absolute top-4 right-4 bg-black bg-opacity-50 text-white rounded-full p-2 hover:bg-opacity-75 z-10" onclick="closeVideoModal()" aria-label="Close video" title="Close">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                    </svg>
+                </button>
+                <div class="aspect-video bg-gray-900 rounded-xl overflow-hidden">
+                    <div class="flex items-center justify-center h-full text-white">
+                        <div class="text-center">
+                            <div class="text-6xl mb-4">📹</div>
+                            <h3 class="text-xl font-semibold mb-2">Video testimonials coming soon!</h3>
+                            <p class="text-gray-300">Watch real clients share their success stories</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Simple Chatbot Widget -->
+    <div id="chatbot-widget" class="fixed bottom-4 right-4 z-50">
+        <!-- Chat Button -->
+        <button id="chat-toggle" aria-label="Toggle chat" class="bg-[var(--primary-color)] text-white rounded-full p-4 shadow-lg hover:bg-red-700 transition-all transform hover:scale-105">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
+            </svg>
+            <div class="absolute -top-2 -right-2 w-5 h-5 bg-green-500 rounded-full flex items-center justify-center">
+                <div class="w-2 h-2 bg-white rounded-full animate-pulse"></div>
+            </div>
+        </button>
+        
+        <!-- Chat Window -->
+        <div id="chat-window" class="absolute bottom-16 right-0 w-80 bg-white rounded-lg shadow-xl transform scale-0 transition-transform duration-200 origin-bottom-right">
+            <div class="bg-[var(--primary-color)] text-white p-4 rounded-t-lg">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center space-x-2">
+                        <div class="w-8 h-8 bg-white bg-opacity-20 rounded-full flex items-center justify-center">
+                            🤖
+                        </div>
+                        <div>
+                            <div class="font-semibold">MarketBot</div>
+                            <div class="text-xs opacity-90">Online now</div>
+                        </div>
+                    </div>
+                    <button id="chat-close" class="text-white hover:text-gray-200 transition" aria-label="Close chat" title="Close chat">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="p-4 h-64 overflow-y-auto" id="chat-messages">
+                <div class="flex items-start space-x-2 mb-4">
+                    <div class="w-6 h-6 bg-[var(--primary-color)] rounded-full flex items-center justify-center text-white text-xs">
+                        🤖
+                    </div>
+                    <div class="bg-gray-100 rounded-lg p-3 max-w-xs">
+                        <p class="text-sm">Hi! I'm MarketBot. I can help you find the perfect marketing package for your business in just 60 seconds! What industry are you in?</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="p-4 border-t">
+                <div class="flex space-x-2">
+                    <input type="text" id="chat-input" placeholder="Type your message..." class="flex-1 border border-gray-300 rounded-full px-4 py-2 text-sm focus:ring-2 focus:ring-[var(--primary-color)] focus:border-transparent">
+                    <button id="chat-send" class="bg-[var(--primary-color)] text-white rounded-full p-2 hover:bg-red-700 transition" title="Send message">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path>
+                        </svg>
+                    </button>
+                </div>
+                
+                <!-- Quick Actions -->
+                <div class="mt-3 flex flex-wrap gap-2">
+                    <button class="bg-gray-100 hover:bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-xs transition" onclick="sendQuickMessage('Restaurant')">🍽️ Restaurant</button>
+                    <button class="bg-gray-100 hover:bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-xs transition" onclick="sendQuickMessage('Retail')">🏪 Retail</button>
+                    <button class="bg-gray-100 hover:bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-xs transition" onclick="sendQuickMessage('Healthcare')">🏥 Healthcare</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/cart.js"></script>
+    <script src="js/cart-ui.js"></script>
+    <script src="js/activity-feed.js"></script>
+    <script src="js/exit-intent.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
+

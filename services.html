@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Marketing Services - MarketBoost</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="css/styles.css" rel="stylesheet"/>
+    <script src="js/api.js"></script>
+    <style type="text/tailwindcss">
+        :root {
+            --primary-color: #ea2a33;
+            --secondary-color: #fef2f2;
+            --background-color: #ffffff;
+            --text-primary: #1a202c;
+            --text-secondary: #4a5568;
+            --accent-color: #fbd38d;
+        }
+        body {
+            font-family: 'Work Sans', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-primary);
+        }
+        .form-input.custom-select {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");
+            background-position: right 0.5rem center;
+            background-repeat: no-repeat;
+            background-size: 1.5em 1.5em;
+            padding-right: 2.5rem;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+        }
+        .price-range-slider {
+            accent-color: var(--primary-color);
+        }
+    </style>
+</head>
+<body class="bg-[var(--background-color)] text-[var(--text-primary)]">
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <div class="flex flex-col min-h-screen">
+        <!-- Header -->
+        <header class="site-header border-b border-gray-200">
+            <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between items-center h-16">
+                    <div class="flex items-center gap-8">
+                        <div class="flex items-center gap-2">
+                            <svg class="h-8 w-8 text-[var(--primary-color)]" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                                <path clip-rule="evenodd" d="M24 18.4228L42 11.475V34.3663C42 34.7796 41.7457 35.1504 41.3601 35.2992L24 42V18.4228Z" fill="currentColor" fill-rule="evenodd"></path>
+                                <path clip-rule="evenodd" d="M24 8.18819L33.4123 11.574L24 15.2071L14.5877 11.574L24 8.18819ZM9 15.8487L21 20.4805V37.6263L9 32.9945V15.8487ZM27 37.6263V20.4805L39 15.8487V32.9945L27 37.6263ZM25.354 2.29885C24.4788 1.98402 23.5212 1.98402 22.646 2.29885L4.98454 8.65208C3.7939 9.08038 3 10.2097 3 11.475V34.3663C3 36.0196 4.01719 37.5026 5.55962 38.098L22.9197 44.7987C23.6149 45.0671 24.3851 45.0671 25.0803 44.7987L42.4404 38.098C43.9828 37.5026 45 36.0196 45 34.3663V11.475C45 10.2097 44.2061 9.08038 43.0155 8.65208L25.354 2.29885Z" fill="currentColor" fill-rule="evenodd"></path>
+                            </svg>
+                            <h1 class="text-xl font-bold">MarketBoost</h1>
+                        </div>
+                        <div class="hidden md:flex items-center gap-8">
+                            <a class="text-sm font-medium text-[var(--primary-color)] font-semibold" href="services.html">Services</a>
+                            <a class="text-sm font-medium hover:text-[var(--primary-color)] transition-colors" href="roi-calculator.html">ROI Calculator</a>
+                            <a class="text-sm font-medium hover:text-[var(--primary-color)] transition-colors" href="index.html">Home</a>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <div class="relative hidden sm:block">
+                            <span class="absolute inset-y-0 left-0 flex items-center pl-3">
+                                <svg class="h-5 w-5 text-gray-400" fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"></path>
+                                </svg>
+                            </span>
+                            <input class="block w-full pl-10 pr-3 py-2 border border-gray-300 rounded-md leading-5 bg-white placeholder-gray-500 focus:outline-none focus:placeholder-gray-400 focus:ring-1 focus:ring-[var(--primary-color)] focus:border-[var(--primary-color)] sm:text-sm" placeholder="Search services" type="search"/>
+                        </div>
+                        <button class="p-2 rounded-full hover:bg-gray-100 transition-colors" aria-label="Help and support" title="Help and support">
+                            <svg class="h-6 w-6 text-gray-600" fill="currentColor" height="20px" viewBox="0 0 256 256" width="20px" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M140,180a12,12,0,1,1-12-12A12,12,0,0,1,140,180ZM128,72c-22.06,0-40,16.15-40,36v4a8,8,0,0,0,16,0v-4c0-11,10.77-20,24-20s24,9,24,20-10.77,20-24,20a8,8,0,0,0-8,8v8a8,8,0,0,0,16,0v-.72c18.24-3.35,32-17.9,32-35.28C168,88.15,150.06,72,128,72Zm104,56A104,104,0,1,1,128,24,104.11,104.11,0,0,1,232,128Zm-16,0a88,88,0,1,0-88,88A88.1,88.1,0,0,0,216,128Z"></path>
+                            </svg>
+                        </button>
+                        <div class="aspect-square rounded-full size-10 bg-gray-300 bg-cover bg-center"></div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Main Content -->
+        <main id="main-content" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 w-full">
+            <div class="flex flex-col lg:flex-row gap-8">
+                <!-- Sidebar Filters -->
+                <aside class="w-full lg:w-1/4">
+                    <div class="sticky top-8">
+                        <div class="space-y-6">
+                            <div>
+                                <h3 class="text-lg font-semibold mb-4">Filters</h3>
+                                <div class="space-y-4">
+                                    <div>
+                                        <label class="block text-sm font-medium text-[var(--text-secondary)]" for="vertical">Industry</label>
+                                        <select class="form-select custom-select mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-[var(--primary-color)] focus:border-[var(--primary-color)] sm:text-sm rounded-md" id="vertical" name="vertical">
+                                            <option>All Industries</option>
+                                            <option>E-commerce</option>
+                                            <option>Local Business</option>
+                                            <option>SaaS</option>
+                                            <option>Healthcare</option>
+                                            <option>Real Estate</option>
+                                        </select>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-medium text-[var(--text-secondary)] mb-2">Service Type</h4>
+                                        <div class="space-y-2">
+                                            <label class="flex items-center">
+                                                <input class="h-4 w-4 rounded border-gray-300 text-[var(--primary-color)] focus:ring-[var(--primary-color)]" type="checkbox"/>
+                                                <span class="ml-2 text-sm text-[var(--text-secondary)]">SEO</span>
+                                            </label>
+                                            <label class="flex items-center">
+                                                <input class="h-4 w-4 rounded border-gray-300 text-[var(--primary-color)] focus:ring-[var(--primary-color)]" type="checkbox"/>
+                                                <span class="ml-2 text-sm text-[var(--text-secondary)]">Social Media</span>
+                                            </label>
+                                            <label class="flex items-center">
+                                                <input class="h-4 w-4 rounded border-gray-300 text-[var(--primary-color)] focus:ring-[var(--primary-color)]" type="checkbox"/>
+                                                <span class="ml-2 text-sm text-[var(--text-secondary)]">Content Marketing</span>
+                                            </label>
+                                            <label class="flex items-center">
+                                                <input class="h-4 w-4 rounded border-gray-300 text-[var(--primary-color)] focus:ring-[var(--primary-color)]" type="checkbox"/>
+                                                <span class="ml-2 text-sm text-[var(--text-secondary)]">Email Marketing</span>
+                                            </label>
+                                            <label class="flex items-center">
+                                                <input class="h-4 w-4 rounded border-gray-300 text-[var(--primary-color)] focus:ring-[var(--primary-color)]" type="checkbox"/>
+                                                <span class="ml-2 text-sm text-[var(--text-secondary)]">PPC Advertising</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-medium text-[var(--text-secondary)] mb-2">Price Range</h4>
+                                        <input class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer price-range-slider" max="2000" min="0" type="range" value="1000"/>
+                                        <div class="flex justify-between text-sm text-[var(--text-secondary)] mt-1">
+                                            <span>$0</span>
+                                            <span>$2000+</span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-medium text-[var(--text-secondary)] mb-2">Delivery Time</h4>
+                                        <div class="space-y-2">
+                                            <label class="flex items-center">
+                                                <input class="h-4 w-4 border-gray-300 text-[var(--primary-color)] focus:ring-[var(--primary-color)]" name="delivery_time" type="radio" checked/>
+                                                <span class="ml-2 text-sm text-[var(--text-secondary)]">Any</span>
+                                            </label>
+                                            <label class="flex items-center">
+                                                <input class="h-4 w-4 border-gray-300 text-[var(--primary-color)] focus:ring-[var(--primary-color)]" name="delivery_time" type="radio"/>
+                                                <span class="ml-2 text-sm text-[var(--text-secondary)]">1-3 days</span>
+                                            </label>
+                                            <label class="flex items-center">
+                                                <input class="h-4 w-4 border-gray-300 text-[var(--primary-color)] focus:ring-[var(--primary-color)]" name="delivery_time" type="radio"/>
+                                                <span class="ml-2 text-sm text-[var(--text-secondary)]">3-7 days</span>
+                                            </label>
+                                            <label class="flex items-center">
+                                                <input class="h-4 w-4 border-gray-300 text-[var(--primary-color)] focus:ring-[var(--primary-color)]" name="delivery_time" type="radio"/>
+                                                <span class="ml-2 text-sm text-[var(--text-secondary)]">7+ days</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-medium text-[var(--text-secondary)] mb-2">Sort By</h4>
+                                        <select class="form-select custom-select mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-[var(--primary-color)] focus:border-[var(--primary-color)] sm:text-sm rounded-md" id="sort" name="sort">
+                                            <option>Recommended</option>
+                                            <option>Price (low to high)</option>
+                                            <option>Price (high to low)</option>
+                                            <option>Delivery time (fastest first)</option>
+                                            <option>Most popular</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+
+                <!-- Services Grid -->
+                <div class="w-full lg:w-3/4">
+                    <div class="mb-6">
+                        <nav aria-label="Breadcrumb" class="flex">
+                            <ol class="flex items-center space-x-2 text-sm" role="list">
+                                <li><a class="text-[var(--text-secondary)] hover:text-[var(--text-primary)]" href="index.html">Home</a></li>
+                                <li><svg aria-hidden="true" class="h-5 w-5 flex-shrink-0 text-gray-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M5.555 17.776l8-16 .894.448-8 16-.894-.448z"></path></svg></li>
+                                <li><span class="font-medium text-[var(--text-primary)]">Marketing Services</span></li>
+                            </ol>
+                        </nav>
+                        <h2 class="text-3xl font-bold mt-2">Marketing Services</h2>
+                        <p class="text-base text-[var(--text-secondary)] mt-1">Find the right marketing services to grow your business</p>
+                        <p class="results-count text-sm text-[var(--text-secondary)] mt-2" aria-live="polite">Loading services…</p>
+                    </div>
+
+                    <!-- Category Tags -->
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <button class="px-4 py-1.5 text-sm font-medium rounded-full bg-[var(--primary-color)] text-white">All</button>
+                        <button class="px-4 py-1.5 text-sm font-medium rounded-full bg-gray-100 text-[var(--text-secondary)] hover:bg-gray-200">Social Media</button>
+                        <button class="px-4 py-1.5 text-sm font-medium rounded-full bg-gray-100 text-[var(--text-secondary)] hover:bg-gray-200">SEO</button>
+                        <button class="px-4 py-1.5 text-sm font-medium rounded-full bg-gray-100 text-[var(--text-secondary)] hover:bg-gray-200">Content</button>
+                        <button class="px-4 py-1.5 text-sm font-medium rounded-full bg-gray-100 text-[var(--text-secondary)] hover:bg-gray-200">Email</button>
+                        <button class="px-4 py-1.5 text-sm font-medium rounded-full bg-gray-100 text-[var(--text-secondary)] hover:bg-gray-200">PPC</button>
+                    </div>
+
+                    <!-- Services Cards -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <!-- Social Media Management -->
+                        <div class="bg-white p-6 rounded-lg shadow-md border border-gray-200 flex flex-col justify-between">
+                            <div>
+                                <div class="aspect-video w-full rounded-md mb-4 bg-cover bg-center bg-social-media"></div>
+                                <h3 class="text-lg font-bold">Social Media Management</h3>
+                                <p class="text-sm text-[var(--text-secondary)] mt-1">Manage your social media presence with expert content creation and community engagement.</p>
+                                <div class="my-4">
+                                    <p class="text-sm font-medium text-[var(--text-primary)] mb-1">What you get:</p>
+                                    <ul class="list-disc list-inside text-sm text-[var(--text-secondary)] space-y-1">
+                                        <li>Daily posts on 2-3 platforms</li>
+                                        <li>Community engagement</li>
+                                        <li>Monthly performance report</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="flex justify-between items-center mt-4">
+                                <p class="text-xl font-bold text-[var(--primary-color)]">$999</p>
+                                <a href="service-detail.html" class="bg-[var(--secondary-color)] text-[var(--text-primary)] border border-gray-300 px-4 py-2 rounded-md font-semibold hover:bg-gray-200 text-sm">View Details</a>
+                            </div>
+                        </div>
+
+                        <!-- SEO Optimization -->
+                        <div class="bg-white p-6 rounded-lg shadow-md border border-gray-200 flex flex-col justify-between">
+                            <div>
+                                <div class="aspect-video w-full rounded-md mb-4 bg-cover bg-center bg-content-marketing"></div>
+                                <h3 class="text-lg font-bold">SEO Optimization</h3>
+                                <p class="text-sm text-[var(--text-secondary)] mt-1">Improve your website's visibility in search engine results with comprehensive SEO strategies.</p>
+                                <div class="my-4">
+                                    <p class="text-sm font-medium text-[var(--text-primary)] mb-1">What you get:</p>
+                                    <ul class="list-disc list-inside text-sm text-[var(--text-secondary)] space-y-1">
+                                        <li>Keyword research & strategy</li>
+                                        <li>On-page optimization</li>
+                                        <li>Technical SEO audit</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="flex justify-between items-center mt-4">
+                                <p class="text-xl font-bold text-[var(--primary-color)]">$1,299</p>
+                                <a href="service-detail.html" class="bg-[var(--secondary-color)] text-[var(--text-primary)] border border-gray-300 px-4 py-2 rounded-md font-semibold hover:bg-gray-200 text-sm">View Details</a>
+                            </div>
+                        </div>
+
+                        <!-- Content Creation -->
+                        <div class="bg-white p-6 rounded-lg shadow-md border border-gray-200 flex flex-col justify-between">
+                            <div>
+                                <div class="aspect-video w-full rounded-md mb-4 bg-cover bg-center bg-seo"></div>
+                                <h3 class="text-lg font-bold">Content Creation</h3>
+                                <p class="text-sm text-[var(--text-secondary)] mt-1">Engaging blog posts, articles, and website copy to attract and convert customers.</p>
+                                <div class="my-4">
+                                    <p class="text-sm font-medium text-[var(--text-primary)] mb-1">What you get:</p>
+                                    <ul class="list-disc list-inside text-sm text-[var(--text-secondary)] space-y-1">
+                                        <li>4 blog posts (500-800 words each)</li>
+                                        <li>Topic research & strategy</li>
+                                        <li>SEO optimization</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="flex justify-between items-center mt-4">
+                                <p class="text-xl font-bold text-[var(--primary-color)]">$699</p>
+                                <a href="service-detail.html" class="bg-[var(--secondary-color)] text-[var(--text-primary)] border border-gray-300 px-4 py-2 rounded-md font-semibold hover:bg-gray-200 text-sm">View Details</a>
+                            </div>
+                        </div>
+
+                        <!-- Email Marketing -->
+                        <div class="bg-white p-6 rounded-lg shadow-md border border-gray-200 flex flex-col justify-between">
+                            <div>
+                                <div class="aspect-video w-full rounded-md mb-4 bg-cover bg-center bg-email-marketing"></div>
+                                <h3 class="text-lg font-bold">Email Marketing Campaign</h3>
+                                <p class="text-sm text-[var(--text-secondary)] mt-1">Targeted email campaigns with professional design, compelling copy, and automation.</p>
+                                <div class="my-4">
+                                    <p class="text-sm font-medium text-[var(--text-primary)] mb-1">What you get:</p>
+                                    <ul class="list-disc list-inside text-sm text-[var(--text-secondary)] space-y-1">
+                                        <li>Email template design</li>
+                                        <li>Campaign setup & deployment</li>
+                                        <li>Performance tracking</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="flex justify-between items-center mt-4">
+                                <p class="text-xl font-bold text-[var(--primary-color)]">$799</p>
+                                <a href="service-detail.html" class="bg-[var(--secondary-color)] text-[var(--text-primary)] border border-gray-300 px-4 py-2 rounded-md font-semibold hover:bg-gray-200 text-sm">View Details</a>
+                            </div>
+                        </div>
+
+                        <!-- PPC Management -->
+                        <div class="bg-white p-6 rounded-lg shadow-md border border-gray-200 flex flex-col justify-between">
+                            <div>
+                                <div class="aspect-video w-full rounded-md mb-4 bg-cover bg-center bg-analytics"></div>
+                                <h3 class="text-lg font-bold">PPC Management</h3>
+                                <p class="text-sm text-[var(--text-secondary)] mt-1">Professional Google Ads and social media advertising management to maximize ROI.</p>
+                                <div class="my-4">
+                                    <p class="text-sm font-medium text-[var(--text-primary)] mb-1">What you get:</p>
+                                    <ul class="list-disc list-inside text-sm text-[var(--text-secondary)] space-y-1">
+                                        <li>Campaign setup & optimization</li>
+                                        <li>Keyword research & bidding</li>
+                                        <li>Monthly performance reports</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="flex justify-between items-center mt-4">
+                                <p class="text-xl font-bold text-[var(--primary-color)]">$1,199</p>
+                                <a href="service-detail.html" class="bg-[var(--secondary-color)] text-[var(--text-primary)] border border-gray-300 px-4 py-2 rounded-md font-semibold hover:bg-gray-200 text-sm">View Details</a>
+                            </div>
+                        </div>
+
+                        <!-- Web Design -->
+                        <div class="bg-white p-6 rounded-lg shadow-md border border-gray-200 flex flex-col justify-between">
+                            <div>
+                                <div class="aspect-video w-full rounded-md mb-4 bg-cover bg-center bg-consultation"></div>
+                                <h3 class="text-lg font-bold">Web Design & Development</h3>
+                                <p class="text-sm text-[var(--text-secondary)] mt-1">Professional website design and development optimized for conversions and user experience.</p>
+                                <div class="my-4">
+                                    <p class="text-sm font-medium text-[var(--text-primary)] mb-1">What you get:</p>
+                                    <ul class="list-disc list-inside text-sm text-[var(--text-secondary)] space-y-1">
+                                        <li>Custom responsive design</li>
+                                        <li>CMS integration</li>
+                                        <li>SEO optimization</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="flex justify-between items-center mt-4">
+                                <p class="text-xl font-bold text-[var(--primary-color)]">$2,499</p>
+                                <a href="service-detail.html" class="bg-[var(--secondary-color)] text-[var(--text-primary)] border border-gray-300 px-4 py-2 rounded-md font-semibold hover:bg-gray-200 text-sm">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pagination -->
+                    <div class="mt-12 flex justify-center">
+                        <nav class="flex items-center space-x-2">
+                            <button class="px-3 py-2 text-sm font-medium text-gray-500 hover:text-gray-700 disabled:opacity-50" disabled>Previous</button>
+                            <button class="px-3 py-2 text-sm font-medium bg-[var(--primary-color)] text-white rounded">1</button>
+                            <button class="px-3 py-2 text-sm font-medium text-gray-700 hover:text-gray-900">2</button>
+                            <button class="px-3 py-2 text-sm font-medium text-gray-700 hover:text-gray-900">3</button>
+                            <button class="px-3 py-2 text-sm font-medium text-gray-700 hover:text-gray-900">Next</button>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Sticky Cart -->
+        <div id="stickyCart" class="fixed bottom-0 left-0 right-0 w-full bg-white shadow-[0_-2px_10px_rgba(0,0,0,0.1)] hidden">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between items-center h-20">
+                    <div class="flex items-center gap-4">
+                        <p class="font-semibold">2 services selected</p>
+                        <button class="text-sm text-[var(--primary-color)] hover:underline">Clear selection</button>
+                    </div>
+                    <button class="bg-[var(--primary-color)] text-white px-6 py-3 rounded-md font-semibold hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)] focus:ring-opacity-50 transition-colors duration-200">
+                        Compare (2)
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/cart.js"></script>
+    <script src="js/cart-ui.js"></script>
+    <script src="js/activity-feed.js"></script>
+    <script src="js/exit-intent.js"></script>
+    <!-- Removed static services script to avoid conflicts with dynamic loader -->
+    <!-- <script src="js/services.js"></script> -->
+    <script src="js/services-dynamic.js"></script>
+</body>
+</html>
