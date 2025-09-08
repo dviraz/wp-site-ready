@@ -1,6 +1,7 @@
 // ROI Calculator JavaScript
 
-document.addEventListener('DOMContentLoaded', async function() {\n    await loadWooConfig();
+document.addEventListener('DOMContentLoaded', async function() {
+    await loadWooConfig();
     initializeCalculator();
     initializeIndustryPresets();
     populateDefaultData();
