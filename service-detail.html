@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Social Media Management - MarketBoost</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="css/styles.css" rel="stylesheet"/>
+    <!-- Client-side redirect to WooCommerce under /shop for local/dev parity -->
+    <meta http-equiv="refresh" content="0; url=/shop">
+    <script>window.location.replace('/shop' + (window.location.search || ''));</script>
+    <style type="text/tailwindcss">
+        :root {
+            --primary-color: #ea2a33;
+            --secondary-color: #fef2f2;
+            --background-color: #ffffff;
+            --text-primary: #1a202c;
+            --text-secondary: #4a5568;
+            --accent-color: #fbd38d;
+            --br-sm: 0.125rem;
+            --br-md: 0.375rem;
+            --br-lg: 0.5rem;
+            --br-xl: 0.75rem;
+            --br-2xl: 1rem;
+            --br-3xl: 1.5rem;
+            --checkbox-tick-svg: url('data:image/svg+xml,%3csvg viewBox=%270 0 16 16%27 fill=%27white%27 xmlns=%27http://www.w3.org/2000/svg%27%3e%3cpath d=%27M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z%27/%3e%3c/svg%3e');
+        }
+        body {
+            font-family: 'Work Sans', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-primary);
+        }
+    </style>
+</head>
+<body class="bg-[var(--background-color)] text-[var(--text-primary)]">
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <div class="relative flex size-full min-h-screen flex-col overflow-x-hidden">
+        <!-- Header -->
+        <header class="site-header sticky top-0 z-20 w-full border-b border-b-[var(--secondary-color)] bg-[var(--background-color)]">
+            <div class="container mx-auto flex items-center justify-between whitespace-nowrap px-4 py-4 lg:px-8">
+                <div class="flex items-center gap-4">
+                    <svg class="h-8 w-8 text-[var(--primary-color)]" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M44 11.2727C44 14.0109 39.8386 16.3957 33.69 17.6364C39.8386 18.877 44 21.2618 44 24C44 26.7382 39.8386 29.123 33.69 30.3636C39.8386 31.6043 44 33.9891 44 36.7273C44 40.7439 35.0457 44 24 44C12.9543 44 4 40.7439 4 36.7273C4 33.9891 8.16144 31.6043 14.31 30.3636C8.16144 29.123 4 26.7382 4 24C4 21.2618 8.16144 18.877 14.31 17.6364C8.16144 16.3957 4 14.0109 4 11.2727C4 7.25611 12.9543 4 24 4C35.0457 4 44 7.25611 44 11.2727Z" fill="currentColor"></path>
+                    </svg>
+                    <h1 class="text-2xl font-bold text-[var(--text-primary)]">MarketBoost</h1>
+                </div>
+                <nav class="hidden items-center gap-8 lg:flex">
+                    <a class="text-base font-medium text-[var(--text-primary)] hover:text-[var(--primary-color)]" href="/shop">Services</a>
+                    <a class="text-base font-medium text-[var(--text-primary)] hover:text-[var(--primary-color)]" href="roi-calculator.html">ROI Calculator</a>
+                    <a class="text-base font-medium text-[var(--text-primary)] hover:text-[var(--primary-color)]" href="index.html">Home</a>
+                </nav>
+                <div class="flex items-center gap-4">
+                    <a class="hidden text-base font-medium text-[var(--text-primary)] hover:text-[var(--primary-color)] sm:block" href="#">Contact Sales</a>
+                    <button class="flex h-10 w-10 items-center justify-center rounded-full bg-[var(--secondary-color)] text-[var(--text-primary)] transition-colors hover:bg-[var(--accent-color)]" aria-label="Help and support" title="Help and support">
+                        <svg fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M140,180a12,12,0,1,1-12-12A12,12,0,0,1,140,180ZM128,72c-22.06,0-40,16.15-40,36v4a8,8,0,0,0,16,0v-4c0-11,10.77-20,24-20s24,9,24,20-10.77,20-24,20a8,8,0,0,0-8,8v8a8,8,0,0,0,16,0v-.72c18.24-3.35,32-17.9,32-35.28C168,88.15,150.06,72,128,72Zm104,56A104,104,0,1,1,128,24,104.11,104.11,0,0,1,232,128Zm-16,0a88,88,0,1,0-88,88A88.1,88.1,0,0,0,216,128Z"></path>
+                        </svg>
+                    </button>
+                    <div class="h-10 w-10 rounded-full bg-gray-300 bg-cover bg-center"></div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main id="main-content" class="container mx-auto flex-1 px-4 py-8">
+            <div class="grid grid-cols-1 gap-12 lg:grid-cols-3">
+                <!-- Service Details -->
+                <div class="lg:col-span-2">
+                    <div class="mb-6">
+                        <nav class="text-sm text-[var(--text-secondary)]">
+                            <a class="text-[var(--primary-color)] hover:underline" href="/shop">Services</a>
+                            <span> / </span>
+                            <span class="font-medium text-[var(--text-primary)]">Social Media Management</span>
+                        </nav>
+                    </div>
+
+                    <h2 class="mb-4 text-4xl font-bold text-[var(--text-primary)]">Social Media Management</h2>
+                    <p class="mb-6 text-lg text-[var(--text-secondary)]">Elevate your brand's online presence with our comprehensive social media management service. We'll handle everything from content creation to community engagement, ensuring your brand stays top-of-mind with your target audience.</p>
+
+                    <!-- Service Tags -->
+                    <div class="mb-8 flex flex-wrap gap-3">
+                        <span class="inline-flex items-center rounded-full bg-[var(--secondary-color)] px-4 py-1 text-sm font-medium text-[var(--primary-color)]">Increased Engagement</span>
+                        <span class="inline-flex items-center rounded-full bg-[var(--secondary-color)] px-4 py-1 text-sm font-medium text-[var(--primary-color)]">Brand Awareness</span>
+                        <span class="inline-flex items-center rounded-full bg-[var(--secondary-color)] px-4 py-1 text-sm font-medium text-[var(--primary-color)]">Content Strategy</span>
+                    </div>
+
+                    <!-- Service Details Sections -->
+                    <div class="space-y-10">
+                        <!-- What You Get -->
+                        <div>
+                            <h3 class="mb-4 text-2xl font-semibold">What You Get</h3>
+                            <ul class="space-y-3">
+                                <li class="flex items-center gap-3">
+                                    <svg class="h-6 w-6 text-[var(--primary-color)]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+                                    </svg>
+                                    Customized content calendar with 30 posts per month
+                                </li>
+                                <li class="flex items-center gap-3">
+                                    <svg class="h-6 w-6 text-[var(--primary-color)]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+                                    </svg>
+                                    Daily posting across 3 social media platforms
+                                </li>
+                                <li class="flex items-center gap-3">
+                                    <svg class="h-6 w-6 text-[var(--primary-color)]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+                                    </svg>
+                                    Community engagement and monitoring (2 hours/day)
+                                </li>
+                                <li class="flex items-center gap-3">
+                                    <svg class="h-6 w-6 text-[var(--primary-color)]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+                                    </svg>
+                                    Monthly performance reports with insights
+                                </li>
+                                <li class="flex items-center gap-3">
+                                    <svg class="h-6 w-6 text-[var(--primary-color)]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+                                    </svg>
+                                    Hashtag research and strategy optimization
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- What We Need -->
+                        <div>
+                            <h3 class="mb-4 text-2xl font-semibold">What We Need From You</h3>
+                            <ul class="space-y-3">
+                                <li class="flex items-center gap-3">
+                                    <svg class="h-6 w-6 text-[var(--text-secondary)]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+                                    </svg>
+                                    Access to your social media accounts (admin level)
+                                </li>
+                                <li class="flex items-center gap-3">
+                                    <svg class="h-6 w-6 text-[var(--text-secondary)]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+                                    </svg>
+                                    Brand guidelines, logos, and marketing assets
+                                </li>
+                                <li class="flex items-center gap-3">
+                                    <svg class="h-6 w-6 text-[var(--text-secondary)]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+                                    </svg>
+                                    Target audience information and business goals
+                                </li>
+                                <li class="flex items-center gap-3">
+                                    <svg class="h-6 w-6 text-[var(--text-secondary)]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+                                    </svg>
+                                    Content approval process and timeline preferences
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Timeline -->
+                        <div>
+                            <h3 class="mb-4 text-2xl font-semibold">Project Timeline</h3>
+                            <div class="relative pl-6">
+                                <div class="absolute left-0 top-0 h-full w-0.5 bg-[var(--accent-color)]"></div>
+                                <div class="relative mb-8 pl-8">
+                                    <div class="absolute -left-1.5 top-1 h-3 w-3 rounded-full bg-[var(--primary-color)]"></div>
+                                    <h4 class="font-semibold">Week 1: Strategy & Planning</h4>
+                                    <p class="text-[var(--text-secondary)]">Develop a tailored social media strategy and content calendar</p>
+                                </div>
+                                <div class="relative mb-8 pl-8">
+                                    <div class="absolute -left-1.5 top-1 h-3 w-3 rounded-full bg-[var(--primary-color)]"></div>
+                                    <h4 class="font-semibold">Week 2-4: Content Creation & Posting</h4>
+                                    <p class="text-[var(--text-secondary)]">Create and schedule engaging content across platforms</p>
+                                </div>
+                                <div class="relative pl-8">
+                                    <div class="absolute -left-1.5 top-1 h-3 w-3 rounded-full bg-[var(--primary-color)]"></div>
+                                    <h4 class="font-semibold">Ongoing: Monitoring & Optimization</h4>
+                                    <p class="text-[var(--text-secondary)]">Track performance, engage with audience, and adjust strategy</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Eligibility -->
+                        <div>
+                            <h3 class="mb-4 text-2xl font-semibold">Perfect For</h3>
+                            <p class="text-[var(--text-secondary)]">This service is ideal for businesses with an existing social media presence (at least 100 followers) looking to enhance their strategy and engagement. New businesses may require additional setup time and consultation.</p>
+                        </div>
+
+                        <!-- Sample Deliverables -->
+                        <div>
+                            <h3 class="mb-4 text-2xl font-semibold">Sample Work</h3>
+                            <div class="grid grid-cols-2 gap-4 sm:grid-cols-3">
+                                <a class="group block" href="#">
+                                    <div class="aspect-square w-full rounded-[var(--br-lg)] bg-cover bg-center transition-transform group-hover:scale-105 bg-social-media-small"></div>
+                                </a>
+                                <a class="group block" href="#">
+                                    <div class="aspect-square w-full rounded-[var(--br-lg)] bg-cover bg-center transition-transform group-hover:scale-105 bg-content-marketing-small"></div>
+                                </a>
+                                <a class="group block" href="#">
+                                    <div class="aspect-square w-full rounded-[var(--br-lg)] bg-cover bg-center transition-transform group-hover:scale-105 bg-seo-small"></div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- FAQ -->
+                        <div>
+                            <h3 class="mb-4 text-2xl font-semibold">Frequently Asked Questions</h3>
+                            <div class="space-y-4">
+                                <details class="group rounded-[var(--br-lg)] border border-[var(--secondary-color)] p-4" open="">
+                                    <summary class="flex cursor-pointer items-center justify-between font-semibold">
+                                        How often will you post on my social media?
+                                        <span class="transform transition-transform duration-300 group-open:rotate-180">↓</span>
+                                    </summary>
+                                    <p class="mt-2 text-[var(--text-secondary)]">We post daily across all selected platforms (Facebook, Instagram, LinkedIn, Twitter) with a total of 30 high-quality posts per month to maintain consistent engagement and reach your target audience effectively.</p>
+                                </details>
+                                
+                                <details class="group rounded-[var(--br-lg)] border border-[var(--secondary-color)] p-4">
+                                    <summary class="flex cursor-pointer items-center justify-between font-semibold">
+                                        What platforms do you manage?
+                                        <span class="transform transition-transform duration-300 group-open:rotate-180">↓</span>
+                                    </summary>
+                                    <p class="mt-2 text-[var(--text-secondary)]">We support all major social media platforms including Facebook, Instagram, Twitter, LinkedIn, and TikTok. The specific platforms are chosen based on your target audience and business goals during our strategy session.</p>
+                                </details>
+
+                                <details class="group rounded-[var(--br-lg)] border border-[var(--secondary-color)] p-4">
+                                    <summary class="flex cursor-pointer items-center justify-between font-semibold">
+                                        Can I review content before it's posted?
+                                        <span class="transform transition-transform duration-300 group-open:rotate-180">↓</span>
+                                    </summary>
+                                    <p class="mt-2 text-[var(--text-secondary)]">Absolutely. We provide a comprehensive content calendar for your review and approval at the beginning of each month. You'll have 48 hours to review and request changes to ensure everything aligns with your brand voice.</p>
+                                </details>
+
+                                <details class="group rounded-[var(--br-lg)] border border-[var(--secondary-color)] p-4">
+                                    <summary class="flex cursor-pointer items-center justify-between font-semibold">
+                                        What if I need to pause or cancel?
+                                        <span class="transform transition-transform duration-300 group-open:rotate-180">↓</span>
+                                    </summary>
+                                    <p class="mt-2 text-[var(--text-secondary)]">Our services are month-to-month with no long-term contracts. You can pause or cancel anytime with 30 days' notice. We'll provide a smooth transition and hand over all created assets.</p>
+                                </details>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pricing Sidebar -->
+                <aside class="sticky top-28 h-fit">
+                    <div class="rounded-[var(--br-xl)] border border-[var(--secondary-color)] bg-white p-6 shadow-lg">
+                        <div class="mb-4 flex items-baseline justify-between">
+                            <span class="text-xl font-medium">Monthly Price</span>
+                            <span class="text-4xl font-bold text-[var(--primary-color)]">$999</span>
+                        </div>
+                        
+                        <div class="mb-6 flex items-baseline justify-between text-lg text-[var(--text-secondary)]">
+                            <span>Setup Time</span>
+                            <span class="font-semibold text-[var(--text-primary)]">7 Days</span>
+                        </div>
+
+                        <!-- Add-ons -->
+                        <div class="mb-6">
+                            <h4 class="mb-3 text-lg font-semibold">Popular Add-ons</h4>
+                            <div class="space-y-3">
+                                <label class="flex items-center justify-between">
+                                    <span class="text-[var(--text-secondary)]">Influencer Collaboration</span>
+                                    <div class="flex items-center gap-3">
+                                        <span class="font-medium text-[var(--text-primary)]">+ $500</span>
+                                        <input class="h-5 w-5 rounded border-gray-300 bg-[var(--secondary-color)] text-[var(--primary-color)] checked:bg-[var(--primary-color)] focus:ring-0 focus:ring-offset-0" type="checkbox"/>
+                                    </div>
+                                </label>
+                                <label class="flex items-center justify-between">
+                                    <span class="text-[var(--text-secondary)]">Custom Graphics Package</span>
+                                    <div class="flex items-center gap-3">
+                                        <span class="font-medium text-[var(--text-primary)]">+ $300</span>
+                                        <input class="h-5 w-5 rounded border-gray-300 bg-[var(--secondary-color)] text-[var(--primary-color)] checked:bg-[var(--primary-color)] focus:ring-0 focus:ring-offset-0" type="checkbox"/>
+                                    </div>
+                                </label>
+                                <label class="flex items-center justify-between">
+                                    <span class="text-[var(--text-secondary)]">Social Media Ads Management</span>
+                                    <div class="flex items-center gap-3">
+                                        <span class="font-medium text-[var(--text-primary)]">+ $800</span>
+                                        <input class="h-5 w-5 rounded border-gray-300 bg-[var(--secondary-color)] text-[var(--primary-color)] checked:bg-[var(--primary-color)] focus:ring-0 focus:ring-offset-0" type="checkbox"/>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Action Buttons -->
+                        <div class="space-y-3">
+                            <button class="w-full rounded-[var(--br-md)] bg-[var(--primary-color)] py-3 px-4 text-lg font-bold text-white transition-colors hover:bg-red-700">Get Started Now</button>
+                            <button class="w-full rounded-[var(--br-md)] border border-[var(--primary-color)] bg-[var(--background-color)] py-3 px-4 text-lg font-bold text-[var(--primary-color)] transition-colors hover:bg-[var(--secondary-color)]">Request Quote</button>
+                            <button class="w-full rounded-[var(--br-md)] bg-transparent py-3 px-4 text-lg font-bold text-[var(--text-secondary)] transition-colors hover:bg-[var(--secondary-color)] hover:text-[var(--primary-color)]">Add to Bundle</button>
+                        </div>
+
+                        <div class="mt-6 text-center">
+                            <a class="text-base font-medium text-[var(--text-secondary)] hover:text-[var(--primary-color)] hover:underline" href="#">Questions? Contact Us</a>
+                        </div>
+                        
+                        <!-- Trust Badges -->
+                        <div class="mt-6 pt-6 border-t border-gray-200">
+                            <div class="flex items-center justify-center gap-4 text-sm text-[var(--text-secondary)]">
+                                <div class="flex items-center gap-1">
+                                    <svg class="h-4 w-4 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                    </svg>
+                                    Money-back guarantee
+                                </div>
+                                <div class="flex items-center gap-1">
+                                    <svg class="h-4 w-4 text-blue-500" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
+                                        <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
+                                    </svg>
+                                    24/7 Support
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/service-detail.js"></script>
+</body>
+</html>

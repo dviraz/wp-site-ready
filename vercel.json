@@ -1,0 +1,14 @@
+{
+  "rewrites": [
+    { "source": "/shop", "destination": "https://synergyx.digital" },
+    { "source": "/shop/(.*)", "destination": "https://synergyx.digital/$1" },
+    { "source": "/wp-content/(.*)", "destination": "https://synergyx.digital/wp-content/$1" },
+    { "source": "/wp-includes/(.*)", "destination": "https://synergyx.digital/wp-includes/$1" },
+    { "source": "/wp-json/(.*)", "destination": "https://synergyx.digital/wp-json/$1" },
+    { "source": "/wc-api/(.*)", "destination": "https://synergyx.digital/wc-api/$1" }
+  ],
+  "redirects": [
+    { "source": "/services.html", "destination": "/shop", "permanent": true },
+    { "source": "/service-detail.html", "destination": "/shop", "permanent": true }
+  ]
+}
