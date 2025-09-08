@@ -3,7 +3,7 @@
 Persistent task list for this repo. Use these sections to track work across Codex sessions so tasks don’t disappear when the CLI restarts.
 
 ## In Progress
-- [ ] Switch WooCommerce API to Vercel rewrites in production
+- [ ] (none)
 
 ## Backlog
 - [ ] Verify /wp-json proxy works on Vercel (Chromium test)
@@ -21,7 +21,12 @@ Persistent task list for this repo. Use these sections to track work across Code
   - Notes: Any caveats or follow-ups
 
 ## Done
-- (empty)
+- [2025-09-08] Add persistent TASKS.md to track work
+- [2025-09-08] Route WooCommerce API via Vercel `/wp-json/wc/v3` in production; keep localhost proxy in dev
+- [2025-09-08] Update cart sync base URL to match prod/dev logic
+- [2025-09-08] Rebuild static output to `public/`
+- [2025-09-08] Commit changes (`feat(integrations): route WooCommerce API via Vercel rewrites and add persistent TASKS.md`)
+- [2025-09-08] Verify add-to-cart via deep links is working
 
 Guidelines
 - Use short, imperative titles (e.g., "Implement ROI range validation").
