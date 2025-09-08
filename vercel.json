@@ -1,5 +1,7 @@
 {
   "rewrites": [
+    { "source": "/shop", "destination": "https://synergyx.digital" },
+    { "source": "/shop/(.*)", "destination": "https://synergyx.digital/$1" },
     { "source": "/wp-content/(.*)", "destination": "https://synergyx.digital/wp-content/$1" },
     { "source": "/wp-includes/(.*)", "destination": "https://synergyx.digital/wp-includes/$1" },
     { "source": "/wp-json/(.*)", "destination": "https://synergyx.digital/wp-json/$1" },
