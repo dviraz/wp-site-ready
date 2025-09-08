@@ -29,9 +29,9 @@ class ServicesRenderer {
             this.showLoading();
 
             try {
-                // Attempt to fetch products from API with timeout (fast fallback)
+                // Attempt to fetch products from API with timeout (fast fallback for testing)
                 const controller = new AbortController();
-                const timeoutMs = 4000;
+                const timeoutMs = 2000; // Faster timeout for testing
                 const timeoutId = setTimeout(() => controller.abort(), timeoutMs);
 
                 const products = await Promise.race([
@@ -374,7 +374,6 @@ class ServicesRenderer {
             resultsCount.textContent = `${count} service${count !== 1 ? 's' : ''} found`;
         }
     }
-}
 
     applyPreselectFromQuery() {
         const params = new URLSearchParams(window.location.search);
@@ -396,6 +395,7 @@ class ServicesRenderer {
             first.classList.add('bg-[var(--primary-color)]', 'text-white');
         }
     }
+}
 
 // Global functions for product interactions
 window.viewProduct = function(productId) {

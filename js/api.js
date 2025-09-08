@@ -1,14 +1,21 @@
 // WooCommerce API Service
 class WooCommerceAPI {
     constructor() {
-        // Use local proxy in dev, Vercel rewrite in prod
+        // Use local proxy in dev, direct API with auth in prod
         const host = (typeof window !== 'undefined' && window.location?.hostname) ? window.location.hostname : '';
         const isLocal = host === 'localhost' || host === '127.0.0.1';
         this.baseURL = isLocal
             ? 'http://localhost:8080/wordpress-api/?rest_route=/wc/v3'
-            : '/wp-json/wc/v3';
+            : 'https://synergyx.digital/wp-json/wc/v3';
         this.cache = new Map();
         this.cacheTimeout = 5 * 60 * 1000; // 5 minutes
+        
+        // Authentication for production API
+        this.credentials = {
+            consumerKey: 'ck_e6497143989e4699742151e2a82873652cbf8b96',
+            consumerSecret: 'cs_d87ab450959241ec7fac88f7aaa1dc005801102d'
+        };
+        this.authHeader = btoa(`${this.credentials.consumerKey}:${this.credentials.consumerSecret}`);
     }
 
     async fetchProducts(options = {}) {
@@ -20,12 +27,21 @@ class WooCommerceAPI {
         }
 
         try {
+            const headers = {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+            };
+            
+            // Add Basic Auth for production API
+            const host = (typeof window !== 'undefined' && window.location?.hostname) ? window.location.hostname : '';
+            const isLocal = host === 'localhost' || host === '127.0.0.1';
+            if (!isLocal) {
+                headers['Authorization'] = `Basic ${this.authHeader}`;
+            }
+            
             const fetchOptions = {
                 method: 'GET',
-                headers: {
-                    'Content-Type': 'application/json',
-                    'Accept': 'application/json'
-                },
+                headers,
                 ...options
             };
             
@@ -72,7 +88,19 @@ class WooCommerceAPI {
         }
 
         try {
-            const response = await fetch(`${this.baseURL}/products/${id}`);
+            const headers = {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+            };
+            
+            // Add Basic Auth for production API
+            const host = (typeof window !== 'undefined' && window.location?.hostname) ? window.location.hostname : '';
+            const isLocal = host === 'localhost' || host === '127.0.0.1';
+            if (!isLocal) {
+                headers['Authorization'] = `Basic ${this.authHeader}`;
+            }
+            
+            const response = await fetch(`${this.baseURL}/products/${id}`, { headers });
             if (!response.ok) {
                 throw new Error(`HTTP error! status: ${response.status}`);
             }
