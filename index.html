@@ -4,9 +4,13 @@
     <meta charset="utf-8"/>
     <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
     <title>MarketBoost - Proven Marketing Services for SMBs</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="alternate icon" href="favicon.ico">
     <link href="https://fonts.googleapis.com" rel="preconnect"/>
     <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+    <link href="css/tailwind-minimal.css" rel="stylesheet"/>
+    <!-- Tailwind CDN fallback for development -->
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <link href="css/styles.css" rel="stylesheet"/>
     <style type="text/tailwindcss">
@@ -42,7 +46,7 @@
             <!-- Desktop Navigation -->
             <div class="hidden md:flex flex-1 justify-end gap-8">
                 <nav class="flex items-center gap-8">
-                    <a class="text-sm font-medium text-[var(--text-secondary)] hover:text-[var(--primary-color)] transition-colors" href="/shop">Services</a>
+                    <a class="text-sm font-medium text-[var(--text-secondary)] hover:text-[var(--primary-color)] transition-colors" href="services.html">Services</a>
                     <a class="text-sm font-medium text-[var(--text-secondary)] hover:text-[var(--primary-color)] transition-colors" href="roi-calculator.html">ROI Calculator</a>
                     <a class="text-sm font-medium text-[var(--text-secondary)] hover:text-[var(--primary-color)] transition-colors" href="#about">About Us</a>
                 </nav>
@@ -66,7 +70,7 @@
             <!-- Mobile Menu -->
             <div class="hidden md:hidden absolute top-full left-0 w-full bg-white border-b shadow-lg z-50" data-mobile-menu>
                 <nav class="flex flex-col p-4 space-y-2">
-                    <a class="text-sm font-medium text-[var(--text-secondary)] hover:text-[var(--primary-color)] transition-colors py-2" href="/shop">Services</a>
+                    <a class="text-sm font-medium text-[var(--text-secondary)] hover:text-[var(--primary-color)] transition-colors py-2" href="services.html">Services</a>
                     <a class="text-sm font-medium text-[var(--text-secondary)] hover:text-[var(--primary-color)] transition-colors py-2" href="roi-calculator.html">ROI Calculator</a>
                     <a class="text-sm font-medium text-[var(--text-secondary)] hover:text-[var(--primary-color)] transition-colors py-2" href="#about">About Us</a>
                     <div class="flex flex-col gap-2 pt-4">
@@ -90,9 +94,14 @@
                             <p class="text-lg text-gray-100 leading-relaxed max-w-3xl">Transparent pricing, U.S.-style invoicing, and fast delivery across SEO, social, content, email, and PPC.</p>
                             
                             <div class="mt-8 flex flex-col items-center space-y-4">
-                                <a href="/shop" class="bg-[var(--primary-color)] text-white px-8 py-4 rounded-full hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)] focus:ring-opacity-50 transition duration-300 ease-in-out text-lg font-bold tracking-wide shadow-lg">
-                                    See Packages & Pricing
-                                </a>
+                                <div class="flex flex-col sm:flex-row gap-4">
+                                    <a href="services.html" class="bg-[var(--primary-color)] text-white px-8 py-4 rounded-full hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)] focus:ring-opacity-50 transition duration-300 ease-in-out text-lg font-bold tracking-wide shadow-lg">
+                                        Browse Services
+                                    </a>
+                                    <a href="services.html" class="bg-white text-[var(--primary-color)] border-2 border-[var(--primary-color)] px-8 py-4 rounded-full hover:bg-[var(--primary-color)] hover:text-white focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)] focus:ring-opacity-50 transition duration-300 ease-in-out text-lg font-bold tracking-wide shadow-lg">
+                                        Full Shop
+                                    </a>
+                                </div>
                                 <p class="text-sm text-gray-300">Clear pricing • Fast delivery • U.S.-based team</p>
                             </div>
                         </div>
@@ -578,7 +587,7 @@
                     </div>
                     <div class="mt-16 flex justify-center gap-4">
                         <button class="bg-[var(--primary-color)] text-white px-8 py-4 rounded-full hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-primary-color focus:ring-opacity-50 transition duration-300 ease-in-out text-lg font-bold">Get Started</button>
-                        <a href="/shop" class="bg-white text-[var(--primary-color)] border border-[var(--primary-color)] px-8 py-4 rounded-full hover:bg-[var(--primary-color)] hover:text-white focus:outline-none focus:ring-2 focus:ring-primary-color focus:ring-opacity-50 transition duration-300 ease-in-out text-lg font-bold">View Services</a>
+                        <a href="services.html" class="bg-white text-[var(--primary-color)] border border-[var(--primary-color)] px-8 py-4 rounded-full hover:bg-[var(--primary-color)] hover:text-white focus:outline-none focus:ring-2 focus:ring-primary-color focus:ring-opacity-50 transition duration-300 ease-in-out text-lg font-bold">View Services</a>
                     </div>
                 </div>
             </section>
@@ -620,25 +629,91 @@
                     </div>
                 </div>
             </section>
+            
+            <!-- About Us Section -->
+            <section id="about" class="bg-gradient-to-b from-white to-gray-50 py-20">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="text-center mb-16">
+                        <h2 class="text-4xl font-bold text-[var(--text-primary)] mb-4">About MarketBoost</h2>
+                        <p class="text-xl text-[var(--text-secondary)] max-w-3xl mx-auto">We're a U.S.-based marketing agency specializing in helping small and medium businesses grow through proven digital marketing strategies.</p>
+                    </div>
+                    
+                    <div class="grid md:grid-cols-2 gap-12 items-center">
+                        <div>
+                            <h3 class="text-2xl font-semibold mb-6 text-[var(--text-primary)]">Our Mission</h3>
+                            <p class="text-[var(--text-secondary)] mb-6 leading-relaxed">
+                                At MarketBoost, we believe every business deserves access to professional marketing that drives real results. We cut through the complexity and deliver transparent, effective marketing solutions that small businesses can understand and afford.
+                            </p>
+                            <div class="space-y-4">
+                                <div class="flex items-center">
+                                    <div class="w-8 h-8 bg-[var(--primary-color)] rounded-full flex items-center justify-center mr-3">
+                                        <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                        </svg>
+                                    </div>
+                                    <span class="text-[var(--text-secondary)]">U.S.-based team with direct communication</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <div class="w-8 h-8 bg-[var(--primary-color)] rounded-full flex items-center justify-center mr-3">
+                                        <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                        </svg>
+                                    </div>
+                                    <span class="text-[var(--text-secondary)]">Transparent pricing with no hidden fees</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <div class="w-8 h-8 bg-[var(--primary-color)] rounded-full flex items-center justify-center mr-3">
+                                        <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                        </svg>
+                                    </div>
+                                    <span class="text-[var(--text-secondary)]">Proven strategies with measurable results</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white p-8 rounded-xl shadow-lg">
+                            <h3 class="text-2xl font-semibold mb-6 text-[var(--text-primary)]">Why Choose Us?</h3>
+                            <div class="space-y-6">
+                                <div>
+                                    <h4 class="font-semibold text-[var(--text-primary)] mb-2">🎯 Results-Focused</h4>
+                                    <p class="text-sm text-[var(--text-secondary)]">We measure success by your business growth, not vanity metrics.</p>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-[var(--text-primary)] mb-2">⚡ Fast Implementation</h4>
+                                    <p class="text-sm text-[var(--text-secondary)]">Get up and running quickly with our streamlined onboarding process.</p>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-[var(--text-primary)] mb-2">📊 Data-Driven</h4>
+                                    <p class="text-sm text-[var(--text-secondary)]">Every strategy is backed by research and continuously optimized.</p>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-[var(--text-primary)] mb-2">🤝 Partnership Approach</h4>
+                                    <p class="text-sm text-[var(--text-secondary)]">We work as an extension of your team, not just another vendor.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
 
         <!-- Footer -->
         <footer class="bg-gray-50 border-t border-gray-200">
             <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8 text-center">
                 <div class="flex justify-center space-x-6 mb-8">
-                    <a class="text-[var(--text-secondary)] hover:text-[var(--primary-color)] transition-colors" href="#">
+                    <a class="text-[var(--text-secondary)] hover:text-[var(--primary-color)] transition-colors" href="javascript:void(0)" onclick="alert('Follow us on Twitter - Coming Soon! @MarketBoost')">
                         <span class="sr-only">Twitter</span>
                         <svg fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg">
                             <path d="M247.39,68.94A8,8,0,0,0,240,64H209.57A48.66,48.66,0,0,0,168.1,40a46.91,46.91,0,0,0-33.75,13.7A47.9,47.9,0,0,0,120,88v6.09C79.74,83.47,46.81,50.72,46.46,50.37a8,8,0,0,0-13.65,4.92c-4.31,47.79,9.57,79.77,22,98.18a110.93,110.93,0,0,0,21.88,24.2c-15.23,17.53-39.21,26.74-39.47,26.84a8,8,0,0,0-3.85,11.93c.75,1.12,3.75,5.05,11.08,8.72C53.51,229.7,65.48,232,80,232c70.67,0,129.72-54.42,135.75-124.44l29.91-29.9A8,8,0,0,0,247.39,68.94Zm-45,29.41a8,8,0,0,0-2.32,5.14C196,166.58,143.28,216,80,216c-10.56,0-18-1.4-23.22-3.08,11.51-6.25,27.56-17,37.88-32.48A8,8,0,0,0,92,169.08c-.47-.27-43.91-26.34-44-96,16,13,45.25,33.17,78.67,38.79A8,8,0,0,0,136,104V88a32,32,0,0,1,9.6-22.92A30.94,30.94,0,0,1,167.9,56c12.66.16,24.49,7.88,29.44,19.21A8,8,0,0,0,204.67,80h16Z"></path>
                         </svg>
                     </a>
-                    <a class="text-[var(--text-secondary)] hover:text-[var(--primary-color)] transition-colors" href="#">
+                    <a class="text-[var(--text-secondary)] hover:text-[var(--primary-color)] transition-colors" href="javascript:void(0)" onclick="alert('Follow us on Facebook - Coming Soon! MarketBoost')">
                         <span class="sr-only">Facebook</span>
                         <svg fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg">
                             <path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm8,191.63V152h24a8,8,0,0,0,0-16H136V112a16,16,0,0,1,16-16h16a8,8,0,0,0,0-16H152a32,32,0,0,0-32,32v24H96a8,8,0,0,0,0,16h24v63.63a88,88,0,1,1,16,0Z"></path>
                         </svg>
                     </a>
-                    <a class="text-[var(--text-secondary)] hover:text-[var(--primary-color)] transition-colors" href="#">
+                    <a class="text-[var(--text-secondary)] hover:text-[var(--primary-color)] transition-colors" href="javascript:void(0)" onclick="alert('Connect with us on LinkedIn - Coming Soon! MarketBoost')">
                         <span class="sr-only">LinkedIn</span>
                         <svg fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg">
                             <path d="M216,24H40A16,16,0,0,0,24,40V216a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V40A16,16,0,0,0,216,24ZM96,176a8,8,0,0,1-16,0V112a8,8,0,0,1,16,0ZM88,96a12,12,0,1,1,12-12A12,12,0,0,1,88,96Zm96,80a8,8,0,0,1-16,0V140a20,20,0,0,0-40,0v36a8,8,0,0,1-16,0V112a8,8,0,0,1,15.79-1.78A36,36,0,0,1,184,140Z"></path>
@@ -646,11 +721,11 @@
                     </a>
                 </div>
                 <nav class="flex flex-wrap justify-center gap-x-6 gap-y-2 mb-8">
-                    <a class="text-base text-[var(--text-secondary)] hover:text-[var(--primary-color)] transition-colors" href="#">Privacy Policy</a>
-                    <a class="text-base text-[var(--text-secondary)] hover:text-[var(--primary-color)] transition-colors" href="#">Terms of Service</a>
-                    <a class="text-base text-[var(--text-secondary)] hover:text-[var(--primary-color)] transition-colors" href="#">Contact Us</a>
+                    <a class="text-base text-[var(--text-secondary)] hover:text-[var(--primary-color)] transition-colors" href="#privacy" onclick="alert('Privacy Policy - Coming Soon! We take your privacy seriously and will have detailed privacy policy available soon.')">Privacy Policy</a>
+                    <a class="text-base text-[var(--text-secondary)] hover:text-[var(--primary-color)] transition-colors" href="#terms" onclick="alert('Terms of Service - Coming Soon! Our terms of service will be available soon.')">Terms of Service</a>
+                    <a class="text-base text-[var(--text-secondary)] hover:text-[var(--primary-color)] transition-colors" href="mailto:support@marketboost.com?subject=Contact%20Us&body=Hello%20MarketBoost%20team,%0A%0AI%20would%20like%20to%20get%20in%20touch%20regarding:">Contact Us</a>
                 </nav>
-                <p class="text-base text-gray-400">© 2024 MarketBoost. All rights reserved.</p>
+                <p class="text-base text-gray-400">© 2025 MarketBoost. All rights reserved.</p>
             </div>
         </footer>
     </div>
