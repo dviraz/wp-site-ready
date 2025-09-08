@@ -5,7 +5,7 @@
   "main": "index.html",
   "scripts": {
     "start": "live-server --port=3000 --open=/",
-    "build": "echo 'No build process needed for static site'",
+    "build": "node scripts/build-static.mjs",
     "test": "echo 'No tests specified'"
   },
   "keywords": [

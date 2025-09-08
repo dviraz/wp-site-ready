@@ -38,3 +38,5 @@ dist/
 
 # Windows reserved device names that may appear
 nul
+
+.vercel
