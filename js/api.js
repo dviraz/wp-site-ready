@@ -1,7 +1,12 @@
 // WooCommerce API Service
 class WooCommerceAPI {
     constructor() {
-        this.baseURL = 'http://localhost:8080/wordpress-api/?rest_route=/wc/v3';
+        // Use local proxy in dev, Vercel rewrite in prod
+        const host = (typeof window !== 'undefined' && window.location?.hostname) ? window.location.hostname : '';
+        const isLocal = host === 'localhost' || host === '127.0.0.1';
+        this.baseURL = isLocal
+            ? 'http://localhost:8080/wordpress-api/?rest_route=/wc/v3'
+            : '/wp-json/wc/v3';
         this.cache = new Map();
         this.cacheTimeout = 5 * 60 * 1000; // 5 minutes
     }

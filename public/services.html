@@ -9,6 +9,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"/>
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <link href="css/styles.css" rel="stylesheet"/>
+    <!-- Client-side redirect to WooCommerce under /shop for local/dev parity -->
+    <meta http-equiv="refresh" content="0; url=/shop">
+    <script>window.location.replace('/shop' + (window.location.search || ''));</script>
     <script src="js/api.js"></script>
     <style type="text/tailwindcss">
         :root {
@@ -55,7 +58,7 @@
                             <h1 class="text-xl font-bold">MarketBoost</h1>
                         </div>
                         <div class="hidden md:flex items-center gap-8">
-                            <a class="text-sm font-medium text-[var(--primary-color)] font-semibold" href="services.html">Services</a>
+                            <a class="text-sm font-medium text-[var(--primary-color)] font-semibold" href="/shop">Services</a>
                             <a class="text-sm font-medium hover:text-[var(--primary-color)] transition-colors" href="roi-calculator.html">ROI Calculator</a>
                             <a class="text-sm font-medium hover:text-[var(--primary-color)] transition-colors" href="index.html">Home</a>
                         </div>
@@ -215,7 +218,7 @@
                             </div>
                             <div class="flex justify-between items-center mt-4">
                                 <p class="text-xl font-bold text-[var(--primary-color)]">$999</p>
-                                <a href="service-detail.html" class="bg-[var(--secondary-color)] text-[var(--text-primary)] border border-gray-300 px-4 py-2 rounded-md font-semibold hover:bg-gray-200 text-sm">View Details</a>
+                                <a href="/shop" class="bg-[var(--secondary-color)] text-[var(--text-primary)] border border-gray-300 px-4 py-2 rounded-md font-semibold hover:bg-gray-200 text-sm">View Details</a>
                             </div>
                         </div>
 
@@ -236,7 +239,7 @@
                             </div>
                             <div class="flex justify-between items-center mt-4">
                                 <p class="text-xl font-bold text-[var(--primary-color)]">$1,299</p>
-                                <a href="service-detail.html" class="bg-[var(--secondary-color)] text-[var(--text-primary)] border border-gray-300 px-4 py-2 rounded-md font-semibold hover:bg-gray-200 text-sm">View Details</a>
+                                <a href="/shop" class="bg-[var(--secondary-color)] text-[var(--text-primary)] border border-gray-300 px-4 py-2 rounded-md font-semibold hover:bg-gray-200 text-sm">View Details</a>
                             </div>
                         </div>
 
@@ -257,7 +260,7 @@
                             </div>
                             <div class="flex justify-between items-center mt-4">
                                 <p class="text-xl font-bold text-[var(--primary-color)]">$699</p>
-                                <a href="service-detail.html" class="bg-[var(--secondary-color)] text-[var(--text-primary)] border border-gray-300 px-4 py-2 rounded-md font-semibold hover:bg-gray-200 text-sm">View Details</a>
+                                <a href="/shop" class="bg-[var(--secondary-color)] text-[var(--text-primary)] border border-gray-300 px-4 py-2 rounded-md font-semibold hover:bg-gray-200 text-sm">View Details</a>
                             </div>
                         </div>
 
