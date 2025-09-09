@@ -12,6 +12,8 @@
     <meta name="description" content="MarketBoost helps U.S. SMBs grow with proven, affordable marketing services. Explore SEO, PPC, social, content and more with transparent pricing."/>
     <link href="css/tailwind-minimal.css" rel="stylesheet"/>
     <link href="css/styles.css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://images.unsplash.com" crossorigin>
+    <link rel="preload" as="image" href="https://images.unsplash.com/photo-1557426272-fc759fdf7a8d?auto=format&fit=crop&w=1920&q=60">
     <style type="text/tailwindcss">
         :root {
             --primary-color: #ea2a33;
@@ -86,7 +88,11 @@
             <section class="py-20 px-4 sm:px-6 lg:px-8">
                 <div class="max-w-7xl mx-auto">
                     <div class="relative rounded-2xl overflow-hidden">
-                        <div class="absolute inset-0 bg-cover bg-center bg-hero"></div>
+                        <img src="https://images.unsplash.com/photo-1557426272-fc759fdf7a8d?auto=format&fit=crop&w=1920&q=60"
+                             alt="Team collaborating on marketing strategy"
+                             fetchpriority="high" decoding="async"
+                             width="1920" height="960"
+                             class="absolute inset-0 w-full h-full object-cover"/>
                         <div class="relative z-10 flex flex-col items-center justify-center min-h-[480px] text-center p-8">
                             
                             <h1 class="text-5xl font-extrabold text-white leading-tight mb-4">U.S. SMB Marketing, Simplified</h1>

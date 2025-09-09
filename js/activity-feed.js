@@ -60,7 +60,10 @@ class LiveActivityFeed {
         
         // Add click handlers
         const closeBtn = container.querySelector('.activity-close');
-        closeBtn.addEventListener('click', () => this.hideActivity());
+        if (closeBtn) {
+            closeBtn.setAttribute('aria-label', 'Close notification');
+            closeBtn.addEventListener('click', () => this.hideActivity());
+        }
         
         // Hide on click outside
         container.addEventListener('click', (e) => {

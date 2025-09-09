@@ -107,7 +107,7 @@ class ExitIntentPopup {
         popup.innerHTML = `
             <div class="relative">
                 <!-- Close button -->
-                <button class="exit-close absolute top-4 right-4 z-10 text-gray-400 hover:text-gray-600 transition-colors">
+                <button class="exit-close absolute top-4 right-4 z-10 text-gray-400 hover:text-gray-600 transition-colors" aria-label="Close offer">
                     <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
                     </svg>
@@ -146,7 +146,7 @@ class ExitIntentPopup {
                         <p class="text-sm text-gray-600 mb-1">Use promo code:</p>
                         <div class="flex items-center justify-center gap-2">
                             <code class="bg-white border px-3 py-1 rounded font-mono text-lg font-bold text-red-600">${offer.code}</code>
-                            <button class="copy-code text-gray-400 hover:text-gray-600 transition-colors" data-code="${offer.code}">
+                            <button class="copy-code text-gray-400 hover:text-gray-600 transition-colors" data-code="${offer.code}" aria-label="Copy code">
                                 <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
                                 </svg>

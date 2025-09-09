@@ -30,6 +30,9 @@ body {
   line-height: 1.6;
 }
 
+/* Improve link visibility in body copy */
+p a { text-decoration: underline; }
+
 /* Smooth Scrolling */
 html {
   scroll-behavior: smooth;
