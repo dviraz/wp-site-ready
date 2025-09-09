@@ -133,8 +133,8 @@
                                         </div>
                                     </div>
                                     <div>
-                                        <h4 class="font-medium text-[var(--text-secondary)] mb-2">Price Range</h4>
-                                        <input class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer price-range-slider" max="2000" min="0" type="range" value="1000"/>
+                                        <h4 id="price-range-label" class="font-medium text-[var(--text-secondary)] mb-2">Price Range</h4>
+                                        <input aria-labelledby="price-range-label" class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer price-range-slider" max="2000" min="0" type="range" value="1000"/>
                                         <div class="flex justify-between text-sm text-[var(--text-secondary)] mt-1">
                                             <span>$0</span>
                                             <span>$2000+</span>
@@ -162,8 +162,8 @@
                                         </div>
                                     </div>
                                     <div>
-                                        <h4 class="font-medium text-[var(--text-secondary)] mb-2">Sort By</h4>
-                                        <select class="form-select custom-select mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-[var(--primary-color)] focus:border-[var(--primary-color)] sm:text-sm rounded-md" id="sort" name="sort">
+                                        <h4 id="sort-label" class="font-medium text-[var(--text-secondary)] mb-2">Sort By</h4>
+                                        <select aria-labelledby="sort-label" class="form-select custom-select mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-[var(--primary-color)] focus:border-[var(--primary-color)] sm:text-sm rounded-md" id="sort" name="sort">
                                             <option>Recommended</option>
                                             <option>Price (low to high)</option>
                                             <option>Price (high to low)</option>

@@ -747,11 +747,7 @@ style.textContent = `
         transform: translateY(0);
         transition: opacity 0.6s ease-out, transform 0.6s ease-out;
     }
-    
-    .grid > div, section {
-        opacity: 0;
-        transform: translateY(20px);
-    }
+    /* Removed global default hiding to prevent sections from disappearing */
     
     .loading {
         pointer-events: none;
