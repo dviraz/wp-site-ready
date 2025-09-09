@@ -1,0 +1,23 @@
+ocument.getElementById('currentConversions').textContent = formatNumber(Math.round(monthlyConversions));
+    document.getElementById('currentRevenue').textContent = formatCurrency(monthlyRevenue);
+}
+
+function calculateROI() {
+    const formData = getFormData();
+    
+    if (!isValidFormData(formData)) {
+        showNotification('Please fill in all required fields with valid numbers.', 'error');
+        return;
+    }
+
+    // Show loading state
+    const button = document.querySelector('button[onclick="calculateROI()"]');
+    const originalText = button.textContent;
+    button.textContent = 'Calculating...';
+    button.disabled = true;
+
+    setTimeout(() => {
+        try {
+            updateROIResults(formData);
+            showSummaryMetrics(formData);
+            showFloatingCart(formData)

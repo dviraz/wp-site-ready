@@ -630,18 +630,19 @@ async function loadWooConfig() {
     if (!res.ok) throw new Error('config fetch failed');
     wooConfig = await res.json();
   } catch (e) {
-    wooConfig = { shopBase: 'services.html', products: {}, categories: {} };
+    wooConfig = { shopBase: '/shop', products: {}, categories: {} };
   }
   return wooConfig;
 }
 
 function getAddToCartHref(serviceKey) {
-  const cfg = wooConfig || { shopBase: 'services.html', products: {}, categories: {} };
+  const cfg = wooConfig || { shopBase: '/shop', products: {}, categories: {} };
   const id = cfg.products?.[serviceKey];
   if (typeof id === 'number' && id > 0) {
     return `${cfg.shopBase}?add-to-cart=${id}`;
   }
   const slug = cfg.categories?.[serviceKey];
   if (slug) return `${cfg.shopBase}/product-category/${slug}/`;
-  return cfg.shopBase || 'services.html';
+  return cfg.shopBase || '/shop';
 }
+

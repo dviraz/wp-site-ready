@@ -7,11 +7,9 @@
     <link href="https://fonts.googleapis.com" rel="preconnect"/>
     <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"/>
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="css/tailwind-minimal.css" rel="stylesheet"/>
     <link href="css/styles.css" rel="stylesheet"/>
-    <!-- Client-side redirect to WooCommerce under /shop for local/dev parity -->
-    <meta http-equiv="refresh" content="0; url=/shop">
-    <script>window.location.replace('/shop' + (window.location.search || ''));</script>
+    <meta name="description" content="Detailed breakdown of the selected MarketBoost service, including features, add-ons, and pricing."/>
     <style type="text/tailwindcss">
         :root {
             --primary-color: #ea2a33;
@@ -48,7 +46,7 @@
                     <h1 class="text-2xl font-bold text-[var(--text-primary)]">MarketBoost</h1>
                 </div>
                 <nav class="hidden items-center gap-8 lg:flex">
-                    <a class="text-base font-medium text-[var(--text-primary)] hover:text-[var(--primary-color)]" href="/shop">Services</a>
+                    <a class="text-base font-medium text-[var(--text-primary)] hover:text-[var(--primary-color)]" href="services.html">Services</a>
                     <a class="text-base font-medium text-[var(--text-primary)] hover:text-[var(--primary-color)]" href="roi-calculator.html">ROI Calculator</a>
                     <a class="text-base font-medium text-[var(--text-primary)] hover:text-[var(--primary-color)]" href="index.html">Home</a>
                 </nav>
@@ -71,7 +69,7 @@
                 <div class="lg:col-span-2">
                     <div class="mb-6">
                         <nav class="text-sm text-[var(--text-secondary)]">
-                            <a class="text-[var(--primary-color)] hover:underline" href="/shop">Services</a>
+                    <a class="text-[var(--primary-color)] hover:underline" href="services.html">Services</a>
                             <span> / </span>
                             <span class="font-medium text-[var(--text-primary)]">Social Media Management</span>
                         </nav>

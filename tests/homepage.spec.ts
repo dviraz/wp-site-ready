@@ -10,7 +10,7 @@ test.describe('Homepage CTA and distractions', () => {
     // Primary CTA points to services
     const cta = page.getByRole('link', { name: 'See Packages & Pricing' });
     await expect(cta).toBeVisible();
-    await expect(cta).toHaveAttribute('href', /\/shop$/);
+    await expect(cta).toHaveAttribute('href', /services\.html$/);
 
     // Sticky CTA bar remains hidden (feature disabled)
     const sticky = page.locator('#sticky-cta');
