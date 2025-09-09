@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 import lighthouse from 'lighthouse';
-import chromeLauncher from 'chrome-launcher';
+import { launch as launchChrome } from 'chrome-launcher';
 import { existsSync, mkdirSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 
@@ -19,7 +19,7 @@ const formatName = (urlPath) => urlPath.replace(/[\/#:?&=]+/g, '_').replace(/^_+
 function pct(x) { return Math.round(((x || 0) * 100)); }
 
 async function run() {
-  const chrome = await chromeLauncher.launch({ chromeFlags: ['--headless', '--disable-gpu', '--no-sandbox'] });
+  const chrome = await launchChrome({ chromeFlags: ['--headless', '--disable-gpu', '--no-sandbox'] });
   const opts = { logLevel: 'error', output: 'html', port: chrome.port, onlyCategories: ['performance', 'accessibility', 'best-practices', 'seo'] };
 
   const results = [];
@@ -49,4 +49,3 @@ async function run() {
 }
 
 run().catch((e) => { console.error('Lighthouse sweep failed:', e); process.exit(1); });
-
