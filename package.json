@@ -11,7 +11,9 @@
     "typecheck": "tsc --noEmit",
     "test:e2e": "playwright test",
     "test:e2e:headed": "cross-env PLAYWRIGHT_HEADLESS=0 playwright test",
-    "check:all": "node scripts/verify.mjs"
+    "check:all": "node scripts/verify.mjs",
+    "audit:axe": "node scripts/a11y-sweep.mjs",
+    "audit:lh": "node scripts/lighthouse-sweep.mjs"
   },
   "keywords": [
     "marketing",
