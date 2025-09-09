@@ -1,0 +1,33 @@
+{
+  "url": "https://wp-marketng-store2.vercel.app/services.html",
+  "violations": [
+    {
+      "id": "link-in-text-block",
+      "impact": "serious",
+      "help": "Links must be distinguishable without relying on color",
+      "nodes": 1
+    }
+  ],
+  "violationCount": 1,
+  "passes": 19,
+  "inapplicable": 40,
+  "console": [
+    "[warning] cdn.tailwindcss.com should not be used in production. To use Tailwind CSS in production, install it as a PostCSS plugin or use the Tailwind CLI: https://tailwindcss.com/docs/installation",
+    "[log] JQMIGRATE: Migrate is installed, version 3.4.1",
+    "[error] Access to XMLHttpRequest at 'https://synergyx.digital/wp-content/themes/astra/assets/css/minified/main.min.css?ver=4.11.10' from origin 'https://wp-marketng-store2.vercel.app' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.",
+    "[warning] Couldn't load preload assets:  ProgressEvent",
+    "[error] Failed to load resource: net::ERR_FAILED",
+    "[error] Access to XMLHttpRequest at 'https://synergyx.digital/wp-includes/css/dist/block-library/style.min.css?ver=6.8.2' from origin 'https://wp-marketng-store2.vercel.app' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.",
+    "[error] Failed to load resource: net::ERR_FAILED",
+    "[error] Access to XMLHttpRequest at 'https://synergyx.digital/wp-content/themes/astra/assets/css/minified/compatibility/woocommerce/woocommerce-layout-grid.min.css?ver=4.11.10' from origin 'https://wp-marketng-store2.vercel.app' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.",
+    "[error] Failed to load resource: net::ERR_FAILED",
+    "[error] Access to XMLHttpRequest at 'https://synergyx.digital/wp-content/themes/astra/assets/css/minified/compatibility/woocommerce/woocommerce-smallscreen-grid.min.css?ver=4.11.10' from origin 'https://wp-marketng-store2.vercel.app' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.",
+    "[error] Failed to load resource: net::ERR_FAILED",
+    "[error] Access to XMLHttpRequest at 'https://synergyx.digital/wp-content/themes/astra/assets/css/minified/compatibility/woocommerce/woocommerce-grid.min.css?ver=4.11.10' from origin 'https://wp-marketng-store2.vercel.app' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.",
+    "[error] Failed to load resource: net::ERR_FAILED",
+    "[error] Access to XMLHttpRequest at 'https://synergyx.digital/wp-content/plugins/woocommerce/assets/css/brands.css?ver=10.1.2' from origin 'https://wp-marketng-store2.vercel.app' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.",
+    "[error] Failed to load resource: net::ERR_FAILED",
+    "[error] Access to XMLHttpRequest at 'https://synergyx.digital/wp-content/plugins/woocommerce/assets/client/blocks/wc-blocks.css?ver=wc-10.1.2' from origin 'https://wp-marketng-store2.vercel.app' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.",
+    "[error] Failed to load resource: net::ERR_FAILED"
+  ]
+}

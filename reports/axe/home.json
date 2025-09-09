@@ -1,0 +1,24 @@
+{
+  "url": "https://wp-marketng-store2.vercel.app/",
+  "violations": [
+    {
+      "id": "button-name",
+      "impact": "critical",
+      "help": "Buttons must have discernible text",
+      "nodes": 1
+    },
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "nodes": 7
+    }
+  ],
+  "violationCount": 2,
+  "passes": 21,
+  "inapplicable": 39,
+  "console": [
+    "[warning] cdn.tailwindcss.com should not be used in production. To use Tailwind CSS in production, install it as a PostCSS plugin or use the Tailwind CLI: https://tailwindcss.com/docs/installation",
+    "[log] MarketBoost Cart initialized with 0 items"
+  ]
+}
